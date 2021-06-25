@@ -1,7 +1,61 @@
 function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
-    // console.log(reading.getElementsByTagName('p')[0].innerHTML);
-    window.location.href='reading_plan/todays_reading.html';
+    //console.log(reading.getElementsByTagName('p')[0].innerHTML);
+    console.log(reading);
+    var date = new Date();
+
+    var monthCompensation = 0; // compensate for number of days before month (0 indexed)
+
+    var currMonth = parseInt(date.getMonth());
+    switch (currMonth) {
+
+      case 11:
+        monthCompensation += 30
+      case 10:
+        monthCompensation += 31
+      case 9:
+        monthCompensation += 30
+
+      case 8:
+        monthCompensation += 31
+
+      case 7:
+        monthCompensation += 31
+
+      case 6:
+        monthCompensation += 30
+
+      case 5:
+        monthCompensation += 31
+
+
+      case 4:
+        monthCompensation += 30
+
+
+      case 3:
+        monthCompensation += 31
+
+
+      case 2:
+
+        monthCompensation += 28;//if leap year rip just nead to change
+
+      case 1:
+        monthCompensation += 31;
+
+
+      case 0:
+
+        break;
+      default:
+        break;
+
+    }
+    var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
+    console.log(correspondingDay);
+    window.location.href = "reading_plan/"+correspondingDay+".html";
+    //window.location.href='reading_plan/todays_reading.html';
 }
 
 function open_chapter(n, book_name) {
