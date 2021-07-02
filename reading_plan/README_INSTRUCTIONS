@@ -1,0 +1,9 @@
+How to add readings as of 7/2/2021 [might change later]:
+
+day 182 = July 1
+
+To add a reading, create a new html file called n.html where n refers to the
+nth day of reading. Ex: 183.html would be the reading for July 2. Copy and paste
+any already existing reading file. Then go into the Bible folder and find the
+corresponding reading. Copy and paste the chapter into the "bible-text" section
+of the html file.
