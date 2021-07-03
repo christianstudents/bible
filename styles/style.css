@@ -82,15 +82,27 @@ button:focus {
     /* background-color: rgb(48, 65, 72, 1.0); */
 }
 
-.book_button {
+.book1_button {
     text-align: center;
     width: fit-content;
     padding: 10px;
     height: 60px;
 }
 
-.book_button:hover, .book_buttom:focus {
-    background-color: #fbde57;
+.book1_button:hover, .book1_buttom:focus {
+    background-color: #7d9eb2;
+    color: white;
+}
+
+.book2_button {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    height: 60px;
+}
+
+.book2_button:hover, .book2_buttom:focus {
+    background-color: #fce681;
     color: white;
 }
 
@@ -122,7 +134,7 @@ button:focus {
 }
 
 .chp_button:hover, .book_buttom:focus {
-    background-color: #fbde57;
+    background-color: #fce681;
     color: white;
 }
 
@@ -148,7 +160,7 @@ button:focus {
     cursor: pointer;
 }
 
-.chapter-buttons {
+.chapter1-buttons {
     display: none;
     margin-right: 10px;
     margin-left: 10px;
@@ -157,12 +169,32 @@ button:focus {
     transition: .3s ease-in-out opacity, .3s ease-in-out transform;
 }
 
-.chapter-buttons .uk-card:hover {
-    background-color: #fbde57;
+.chapter1-buttons .uk-card:hover {
+    color: white;
+    background-color: #fce681;
     /* background-color: rgba(0, 0, 0, 0.05); */
 }
 
-.chapter-buttons .uk-card-body {
+.chapter1-buttons .uk-card-body {
+    padding: 20px 20px !important;
+}
+
+.chapter2-buttons {
+    display: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0;
+    padding: 10px 0 10px 0;
+    transition: .3s ease-in-out opacity, .3s ease-in-out transform;
+}
+
+.chapter2-buttons .uk-card:hover {
+    color: white;
+    background-color: #7d9eb2;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+}
+
+.chapter2-buttons .uk-card-body {
     padding: 20px 20px !important;
 }
 
