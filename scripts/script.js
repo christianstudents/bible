@@ -1,20 +1,14 @@
 
 
-/*
-
-Functionality: Makes it so that the buttons for the reading schedule will display the corresponding reading.
-
-
-*/
-function update_button_tag(button_id, button_num) {
-
-  //console.log(170.html);
-  window.location.href = "reading_plan/plan_dictionary.html";
-
-
-  window.location.href = "schedule.html";
-  //document.getElementById(button_id) = button_num;
-
+function parse_dictionary () {
+  const fs = require('fs');
+  const papa = require('papaparse');
+const file = fs.createReadStream('reading_plan/Sample_Bible_Reading_Program.csv');
+  Papa.parse(file, {
+	complete: function(results) {
+		console.log(results);
+	}
+});
 }
 
 
@@ -85,6 +79,8 @@ function open_reading(reading) {
     }
     var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
     window.location.href = "reading_plan/"+correspondingDay+".html";
+    parse_dictionary();
+    console.log(1);
     //window.location.href='reading_plan/todays_reading.html';
 }
 
