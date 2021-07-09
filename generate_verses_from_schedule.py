@@ -40,7 +40,7 @@ for each_file in html_files_of_bible:
 		book = book[0:(len(book))].replace('.html','')
 	books_of_the_bible[book] = each_file
 
-print(books_of_the_bible)
+#print(books_of_the_bible)
 
 """
 Here we grab the verses for each day's reading.
@@ -63,9 +63,9 @@ with open('reading_plan/Sample_Bible_Reading_Program.csv') as csv_file:
     		book = row[1].lower().rstrip(digits).rstrip(" ")
     		m = re.findall(r"\d+\s*$", row[1]); chapter = m[0] if m else 1
     		html_file = books_of_the_bible[book]
-    		print("html file we want to grab from: " + html_file)
-    		print("book is: " + book)
-    		print("chapter is: " + str(chapter))
+    		#print("html file we want to grab from: " + html_file)
+    		#print("book is: " + book)
+    		#print("chapter is: " + str(chapter))
 
     		with open(src + "/" + html_file) as fp:
     			soup = BeautifulSoup(fp, 'html.parser')
@@ -73,14 +73,14 @@ with open('reading_plan/Sample_Bible_Reading_Program.csv') as csv_file:
 			reading_plan[row[0]] = div[int(chapter) - 1]
 	    	counter += 1
 
-print(first_date)
-print(last_date)
+"""
+Write the reading plan of dictionary {Date: html of verses, 
+date: html of verses, etc.} to txt file.
+"""
 
-#json_object = json.dumps(reading_plan)
-#print(json_object)
-#filename = "reading_plan.txt"
-#dirname = os.path.dirname(filename)
-#if not os.path.exists(dirname):
-#    os.makedirs(dirname)
-#file1 = open(filename, "w") 
-#file1.write(str(reading_plan))
+#output_file = "reading_plan" + first_date + "-" + last_date + ".txt"
+#f = open(output_file, "a")
+filename = "reading_plan.txt"
+f = open(filename, "a")
+f.write(str(reading_plan))
+f.close()
