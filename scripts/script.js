@@ -1,3 +1,35 @@
+
+
+/*
+
+Functionality: Makes it so that the buttons for the reading schedule will display the corresponding reading.
+
+
+*/
+function update_button_tag(button_id, button_num) {
+
+  //console.log(170.html);
+  window.location.href = "reading_plan/plan_dictionary.html";
+
+
+  window.location.href = "schedule.html";
+  //document.getElementById(button_id) = button_num;
+
+}
+
+
+
+/*
+
+Functionality: Returns the corresponding reaing for the day
+
+*/
+
+/*function reading_for_day(day num) {
+
+}*/
+
+
 function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
     //console.log(reading.getElementsByTagName('p')[0].innerHTML);
@@ -32,7 +64,6 @@ function open_reading(reading) {
       case 4:
         monthCompensation += 30
 
-
       case 3:
         monthCompensation += 31
 
@@ -53,7 +84,6 @@ function open_reading(reading) {
 
     }
     var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
-    console.log(correspondingDay);
     window.location.href = "reading_plan/"+correspondingDay+".html";
     //window.location.href='reading_plan/todays_reading.html';
 }
