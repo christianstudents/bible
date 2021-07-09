@@ -1,7 +1,7 @@
 {
 "inputstring": "'John 1:14; 1 Cor. 15:45b; Rev. 3:1; Matt. 16:18; 1 Cor. 12:12; Rev. 21:2'",
 "detected": "John 1:14; 1 Cor. 15:45; Rev. 3:1; Matt. 16:18; 1 Cor. 12:12; Rev. 21:2.",
-"date": "2021-06-18T00:00:00.000Z",
+"date": "2021-06-25T00:00:00.000Z",
 "verses": [
 	{"ref": "John 1:14", "text": "And the Word became flesh and tabernacled among us (and we beheld His glory, glory as of the only Begotten from the Father), full of grace and reality."},
 	{"ref": "1 Cor. 15:45", "text": "So also it is written, 'The first man, Adam, became a living soul'; the last Adam [became] a life-giving Spirit."},

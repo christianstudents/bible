@@ -1,6 +1,6 @@
 /* Basics */
 body {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 h1 {
@@ -10,7 +10,8 @@ h1 {
 /* Navbar */
 .uk-navbar-container {
     height: 50px;
-    background-color: rgb(48, 65, 72, 1.0) !important;
+    /* background-color: rgb(48, 65, 72, 1.0) !important; */
+    background-color:#4f758b !important;
 }
 
 .uk-navbar-nav>* {
@@ -21,9 +22,10 @@ h1 {
     min-height: 55px !important;
     color: white !important;
     text-transform: none !important;
-    font-weight: 300 !important;
+    /* font-weight: 300 !important; */
+    font-weight: 500 !important;
     letter-spacing: 1px !important;
-    font-size: 15px !important;
+    font-size: 17px !important;
 }
 
 .uk-navbar-nav>li>a:hover {
@@ -65,16 +67,75 @@ button:focus {
     font-size: 14px;
     height: 50px;
     padding: 0px;
-    background-color: rgb(79, 91, 98, 1.0);
+    background-color: #7d9eb2;
+    /* background-color: rgb(79, 91, 98, 1.0); */
     color: white;
 }
 
 .top_button:hover, .top_button:focus {
-    background-color: rgb(48, 65, 72, 1.0);
+    background-color: #4f758b; /*Founder's Rock*/
+    /* background-color: rgb(48, 65, 72, 1.0); */
 }
 
 .top_button.active {
-    background-color: rgb(48, 65, 72, 1.0);
+    background-color: #4f758b; /*Founder's Rock*/
+    /* background-color: rgb(48, 65, 72, 1.0); */
+}
+
+.book1_button {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    height: 60px;
+}
+
+.book1_button:hover, .book1_buttom:focus {
+    background-color: #7d9eb2;
+    color: white;
+}
+
+.book2_button {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    height: 60px;
+}
+
+.book2_button:hover, .book2_buttom:focus {
+    background-color: #fce681;
+    color: white;
+}
+
+.display {
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: #fce681;
+    /* background-color: #7d9eb2; */
+    color: white;
+}
+
+.display:hover, .display:focus {
+    background-color: #fbde57;
+    /* background-color: #4f758b; */
+}
+
+.display.active {
+    background-color: #fbde57;
+    /* background-color: #4f758b; */
+}
+
+.chp_button {
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    height: 60px;
+}
+
+.chp_button:hover, .book_buttom:focus {
+    background-color: #fce681;
+    color: white;
 }
 
 /* Grid */
@@ -99,7 +160,7 @@ button:focus {
     cursor: pointer;
 }
 
-.chapter-buttons {
+.chapter1-buttons {
     display: none;
     margin-right: 10px;
     margin-left: 10px;
@@ -108,15 +169,40 @@ button:focus {
     transition: .3s ease-in-out opacity, .3s ease-in-out transform;
 }
 
-.chapter-buttons .uk-card:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+.chapter1-buttons .uk-card:hover {
+    color: white;
+    background-color: #fce681;
+    /* background-color: rgba(0, 0, 0, 0.05); */
 }
 
-.chapter-buttons .uk-card-body {
+.chapter1-buttons .uk-card-body {
+    padding: 20px 20px !important;
+}
+
+.chapter2-buttons {
+    display: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0;
+    padding: 10px 0 10px 0;
+    transition: .3s ease-in-out opacity, .3s ease-in-out transform;
+}
+
+.chapter2-buttons .uk-card:hover {
+    color: white;
+    background-color: #7d9eb2;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+}
+
+.chapter2-buttons .uk-card-body {
     padding: 20px 20px !important;
 }
 
 /* Text Layout */
+.bible_bar {
+    background-color: #4f758b; /*Founder's Rock*/
+}
+
 .bible-text {
     margin: 20px;
 }
