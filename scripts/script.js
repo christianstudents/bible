@@ -1,14 +1,8 @@
 
 
 function parse_dictionary () {
-  const fs = require('fs');
-  const papa = require('papaparse');
-const file = fs.createReadStream('reading_plan/Sample_Bible_Reading_Program.csv');
-  Papa.parse(file, {
-	complete: function(results) {
-		console.log(results);
-	}
-});
+  $.csv.toArray("reading_plan/Sample_Bible_Reading_Program.csv");
+  console.log("hi");
 }
 
 
@@ -28,6 +22,7 @@ function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
     //console.log(reading.getElementsByTagName('p')[0].innerHTML);
     console.log(reading);
+    parse_dictionary();
     var date = new Date();
 
     var monthCompensation = 0; // compensate for number of days before month (0 indexed)
