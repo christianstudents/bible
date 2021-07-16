@@ -22,7 +22,7 @@ function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
     //console.log(reading.getElementsByTagName('p')[0].innerHTML);
     console.log(reading);
-    parse_dictionary();
+    //parse_dictionary();
     var date = new Date();
 
     var monthCompensation = 0; // compensate for number of days before month (0 indexed)
