@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+								<li><a onclick="go_back_page()">Luke</a></li>
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+
+		<div class="bible-text">
+			<h4 id="romans-10">Romans 10</h4>
+			<p><sup><b>1</b></sup> Brothers, the good pleasure of my heart and my petition to God for them is for their salvation.<br><br>
+				 <sup><b>2</b></sup> For I bear them witness that they have a zeal for God, but not according to full knowledge;<br><br>
+				 <sup><b>3</b></sup> For because they were ignorant of God’s righteousness and sought to establish their own righteousness, they were not subject to the righteousness of God.<br><br>
+				 <sup><b>4</b></sup> For Christ is the end of the law unto righteousness to everyone who believes.<br><br>
+				 <sup><b>5</b></sup> For Moses writes concerning the righteousness which is out of the law: “The man who does them shall live by them.”<br><br>
+				 <sup><b>6</b></sup> But the righteousness which is out of faith speaks in this way, Do not say in your heart, “Who will ascend into heaven?” that is, to bring Christ down;<br><br>
+				 <sup><b>7</b></sup> Or, “Who will descend into the abyss?” that is, to bring Christ up from the dead.<br><br>
+				 <sup><b>8</b></sup> But what does it say? “The word is near you, in your mouth and in your heart,” that is, the word of the faith which we proclaim,<br><br>
+				 <sup><b>9</b></sup> That if you confess with your mouth Jesus as Lord and believe in your heart that God has raised Him from the dead, you will be saved;<br><br>
+				 <sup><b>10</b></sup> For with the heart there is believing unto righteousness, and with the mouth there is confession unto salvation.<br><br>
+				 <sup><b>11</b></sup> For the Scripture says, “Everyone who believes on Him shall not be put to shame.”<br><br>
+				 <sup><b>12</b></sup> For there is no distinction between Jew and Greek, for the same Lord is Lord of all and rich to all who call upon Him;<br><br>
+				 <sup><b>13</b></sup> For “whoever calls upon the name of the Lord shall be saved.”<br><br>
+				 <sup><b>14</b></sup> How then shall they call upon Him into whom they have not believed? And how shall they believe into Him of whom they have not heard? And how shall they hear without one who proclaims Him?<br><br>
+				 <sup><b>15</b></sup> And how shall they proclaim Him unless they are sent? As it is written, “How beautiful are the feet of those who announce the news of good things!”<br><br>
+				 <sup><b>16</b></sup> But not all have obeyed the gospel, for Isaiah says, “Lord, who has believed what he has heard from us?”<br><br>
+				 <sup><b>17</b></sup> So faith comes out of hearing, and hearing through the word of Christ.<br><br>
+				 <sup><b>18</b></sup> But I say, Have they not heard? Yes surely: “Their voice has gone out into all the earth and their words to the ends of the inhabited earth.”<br><br>
+				 <sup><b>19</b></sup> But I say, Did Israel not know this? First, Moses says, “I will provoke you to jealousy by them who are not a nation; by a nation without understanding I will anger you.”<br><br>
+				 <sup><b>20</b></sup> And Isaiah is very bold and says, “I was found by those who did not seek Me; I became manifest to those who did not ask for Me.”<br><br>
+				 <sup><b>21</b></sup> But with regard to Israel he says, “All the day long I have stretched out My hands to a people who disobey and contradict.” <br><br>
+			</p>
+		</div>
+  <script>
+    document.getElementById('luke-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
