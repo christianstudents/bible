@@ -75,7 +75,6 @@ function open_reading(reading) {
     var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
     window.location.href = "reading_plan/"+correspondingDay+".html";
     parse_dictionary();
-    console.log(1);
     //window.location.href='reading_plan/todays_reading.html';
 }
 
