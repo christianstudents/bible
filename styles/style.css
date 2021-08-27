@@ -129,7 +129,7 @@ button:focus {
 .chp_button {
     text-align: center;
     width: fit-content;
-    padding: 10px;
+    padding: 2px;
     height: 60px;
 }
 
