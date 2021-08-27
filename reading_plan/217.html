@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--Date: 8/5-->
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+								<li><a onclick="go_back_page()">Romans</a></li>
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="bible-text">
+			<h4 id="romans-5">Romans 5</h4>
+			<p><sup><b>1</b></sup> Therefore having been justified out of faith, we have peace toward God through our Lord Jesus Christ,<br><br>
+				 <sup><b>2</b></sup> Through whom also we have obtained access by faith into this grace in which we stand and boast because of the hope of the glory of God.<br><br>
+				 <sup><b>3</b></sup> And not only so, but we also boast in our tribulations, knowing that tribulation produces endurance;<br><br>
+				 <sup><b>4</b></sup> And endurance, approvedness; and approvedness, hope;<br><br>
+				 <sup><b>5</b></sup> And hope does not put us to shame, because the love of God has been poured out in our hearts through the Holy Spirit, who has been given to us.<br><br>
+				 <sup><b>6</b></sup> For while we were yet weak, in due time Christ died for the ungodly.<br><br>
+				 <sup><b>7</b></sup> For scarcely for a righteous man will anyone die, though perhaps for the good man someone would even dare to die.<br><br>
+				 <sup><b>8</b></sup> But God commends His own love to us in that while we were yet sinners, Christ died for us.<br><br>
+				 <sup><b>9</b></sup> Much more then, having now been justified in His blood, we will be saved through Him from the wrath.<br><br>
+				 <sup><b>10</b></sup> For if we, being enemies, were reconciled to God through the death of His Son, much more we will be saved in His life, having been reconciled,<br><br>
+				 <sup><b>11</b></sup> And not only so, but also boasting in God through our Lord Jesus Christ, through whom we have now received the reconciliation.<br><br>
+				 <sup><b>12</b></sup> Therefore just as through one man sin entered into the world, and through sin, death; and thus death passed on to all men because all have sinned —<br><br>
+				 <sup><b>13</b></sup> For until the law sin was in the world, but sin is not charged to one’s account when there is no law.<br><br>
+				 <sup><b>14</b></sup> But death reigned from Adam until Moses, even over those who had not sinned after the likeness of Adam’s transgression, who is a type of Him who was to come.<br><br>
+				 <sup><b>15</b></sup> But it is not that as the offense was, so also the gracious gift is; for if by the offense of the one the many died, much more the grace of God and the free gift in grace of the one man Jesus Christ have abounded to the many.<br><br>
+				 <sup><b>16</b></sup> And it is not that as through one who sinned, so also the free gift is; for the judgment was out of one offense unto condemnation, but the gracious gift is out of many offenses unto justification.<br><br>
+				 <sup><b>17</b></sup> For if, by the offense of the one, death reigned through the one, much more those who receive the abundance of grace and of the gift of righteousness will reign in life through the One, Jesus Christ.<br><br>
+				 <sup><b>18</b></sup> So then as it was through one offense unto condemnation to all men, so also it was through one righteous act unto justification of life to all men.<br><br>
+				 <sup><b>19</b></sup> For just as through the disobedience of one man the many were constituted sinners, so also through the obedience of the One the many will be constituted righteous.<br><br>
+				 <sup><b>20</b></sup> And the law entered in alongside that the offense might abound; but where sin abounded, grace has superabounded,<br><br>
+				 <sup><b>21</b></sup> In order that just as sin reigned in death, so also grace might reign through righteousness unto eternal life through Jesus Christ our Lord. <br><br>
+			</p>
+		</div>
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

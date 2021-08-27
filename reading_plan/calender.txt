@@ -1,0 +1,44 @@
+This text file is to help find what number corresponds to which date
+and vice versa.
+
+
+Non leap year (Leap year)
+Jan 1 = 1
+.
+.
+Jan 31 = 31
+Feb 1 = 32
+.
+.
+Feb 28 = 59 (Feb 29 = 60)
+Mar 1 = 60 (61)
+.
+.
+Mar 31 = 90 (91)
+.
+.
+Apr 30 = 120 (121)
+.
+.
+May 31 = 151 (152)
+.
+.
+June 30 = 181 (182)
+.
+.
+July 31 = 212 (213)
+.
+.
+Aug 31 = 243 (244)
+.
+.
+Sept 30 = 273 (274)
+.
+.
+Oct 31 = 304 (305)
+.
+.
+Nov 30 = 334 (335)
+.
+.
+Dec 31 = 365 (366)

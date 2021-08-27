@@ -1,7 +1,28 @@
+
+
+function parse_dictionary () {
+  $.csv.toArray("reading_plan/Sample_Bible_Reading_Program.csv");
+  console.log("hi");
+}
+
+
+
+/*
+
+Functionality: Returns the corresponding reaing for the day
+
+*/
+
+/*function reading_for_day(day num) {
+
+}*/
+
+
 function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
     //console.log(reading.getElementsByTagName('p')[0].innerHTML);
     console.log(reading);
+    //parse_dictionary();
     var date = new Date();
 
     var monthCompensation = 0; // compensate for number of days before month (0 indexed)
@@ -32,7 +53,6 @@ function open_reading(reading) {
       case 4:
         monthCompensation += 30
 
-
       case 3:
         monthCompensation += 31
 
@@ -53,8 +73,8 @@ function open_reading(reading) {
 
     }
     var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
-    console.log(correspondingDay);
     window.location.href = "reading_plan/"+correspondingDay+".html";
+    parse_dictionary();
     //window.location.href='reading_plan/todays_reading.html';
 }
 

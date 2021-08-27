@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--Date: 8/6-->
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+								<li><a onclick="go_back_page()">Romans</a></li>
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+
+		<div class="bible-text">
+			<h4 id="romans-6">Romans 6</h4>
+			<p><sup><b>1</b></sup> What then shall we say? Should we continue in sin that grace may abound?<br><br>
+				 <sup><b>2</b></sup> Absolutely not! We who have died to sin, how shall we still live in it?<br><br>
+				 <sup><b>3</b></sup> Or are you ignorant that all of us who have been baptized into Christ Jesus have been baptized into His death?<br><br>
+				 <sup><b>4</b></sup> We have been buried therefore with Him through baptism into His death, in order that just as Christ was raised from the dead through the glory of the Father, so also we might walk in newness of life.<br><br>
+				 <sup><b>5</b></sup> For if we have grown together with Him in the likeness of His death, indeed we will also be in the likeness of His resurrection,<br><br>
+				 <sup><b>6</b></sup> Knowing this, that our old man has been crucified with Him in order that the body of sin might be annulled, that we should no longer serve sin as slaves;<br><br>
+				 <sup><b>7</b></sup> For he who has died is justified from sin.<br><br>
+				 <sup><b>8</b></sup> Now if we have died with Christ, we believe that we will also live with Him,<br><br>
+				 <sup><b>9</b></sup> Knowing that Christ, having been raised from the dead, dies no more; death lords it over Him no more.<br><br>
+				 <sup><b>10</b></sup> For the death which He died, He died to sin once for all; but the life which He lives, He lives to God.<br><br>
+				 <sup><b>11</b></sup> So also you, reckon yourselves to be dead to sin, but living to God in Christ Jesus.<br><br>
+				 <sup><b>12</b></sup> Do not let sin therefore reign in your mortal body so that you obey the body’s lusts;<br><br>
+				 <sup><b>13</b></sup> Neither present your members as weapons of unrighteousness to sin, but present yourselves to God as alive from the dead, and your members as weapons of righteousness to God.<br><br>
+				 <sup><b>14</b></sup> For sin will not lord it over you, for you are not under the law but under grace.<br><br>
+				 <sup><b>15</b></sup> What then? Should we sin, because we are not under the law but under grace? Absolutely not!<br><br>
+				 <sup><b>16</b></sup> Do you not know that to whom you present yourselves as slaves for obedience, his slaves you are whom you obey, whether of sin unto death or of obedience unto righteousness?<br><br>
+				 <sup><b>17</b></sup> But thanks be to God that though you were slaves of sin, you have obeyed from the heart the form of teaching into which you were delivered.<br><br>
+				 <sup><b>18</b></sup> And having been freed from sin, you were enslaved to righteousness.<br><br>
+				 <sup><b>19</b></sup> I speak in human terms because of the weakness of your flesh. For just as you presented your members as slaves to uncleanness and lawlessness unto lawlessness, so now present your members as slaves to righteousness unto sanctification.<br><br>
+				 <sup><b>20</b></sup> For when you were slaves of sin, you were free with regard to righteousness.<br><br>
+				 <sup><b>21</b></sup> What fruit then did you have at that time? Things of which you are now ashamed, for the end of those things is death.<br><br>
+				 <sup><b>22</b></sup> But now, having been freed from sin and enslaved to God, you have your fruit unto sanctification, and the end, eternal life.<br><br>
+				 <sup><b>23</b></sup> For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. <br><br>
+			</p>
+		</div>
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
