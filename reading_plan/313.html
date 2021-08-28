@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="john-2"><a onclick="open_chapter('top', '43-john.html')">John 2</a></h4>
+  <p><sup><b>1</b></sup> And the third day a wedding took place in Cana of Galilee, and the mother of Jesus was there.<br><br>
+     <sup><b>2</b></sup> And Jesus also was invited, as well as His disciples, to the wedding.<br><br>
+     <sup><b>3</b></sup> And when the wine ran out, the mother of Jesus said to Him, They have no wine.<br><br>
+     <sup><b>4</b></sup> And Jesus said to her, Woman, what do I have in this that concerns you? My hour has not yet come.<br><br>
+     <sup><b>5</b></sup> His mother said to the servants, Whatever He says to you, do.<br><br>
+     <sup><b>6</b></sup> Now there were six stone waterpots lying there, according to the Jews’ rite of purification, holding two or three measures each.<br><br>
+     <sup><b>7</b></sup> Jesus said to them, Fill the waterpots with water. And they filled them up to the brim.<br><br>
+     <sup><b>8</b></sup> And He said to them, Draw some out now and take it to the master of the feast. And they took it to him.<br><br>
+     <sup><b>9</b></sup> And when the master of the feast tasted the water which had become wine and did not know where it came from, though the servants who had drawn the water knew, the master of the feast called the bridegroom<br><br>
+     <sup><b>10</b></sup> And said to him, Every man sets out the good wine first, and when they have drunk freely, then that which is worse; you have kept the good wine until now.<br><br>
+     <sup><b>11</b></sup> This beginning of signs Jesus performed in Cana of Galilee and manifested His glory, and His disciples believed into Him.<br><br>
+     <sup><b>12</b></sup> After this He went down to Capernaum, He and His mother and His brothers and His disciples; and they remained there not many days.<br><br>
+     <sup><b>13</b></sup> And the Passover of the Jews was near, and Jesus went up to Jerusalem.<br><br>
+     <sup><b>14</b></sup> And He found in the temple those selling oxen and sheep and doves, and the moneychangers sitting there.<br><br>
+     <sup><b>15</b></sup> And having made a whip out of cords, He drove them all out of the temple, as well as the sheep and the oxen, and He poured out the money of the moneychangers and overturned their tables.<br><br>
+     <sup><b>16</b></sup> And to those who were selling the doves He said, Take these things away from here; do not make My Father’s house a house of merchandise.<br><br>
+     <sup><b>17</b></sup> His disciples remembered that it was written, “The zeal of Your house shall devour Me.”<br><br>
+     <sup><b>18</b></sup> The Jews then answered and said to Him, What sign do You show us, seeing that You do these things?<br><br>
+     <sup><b>19</b></sup> Jesus answered and said to them, Destroy this temple, and in three days I will raise it up.<br><br>
+     <sup><b>20</b></sup> Then the Jews said, This temple was built in forty-six years, and You will raise it up in three days?<br><br>
+     <sup><b>21</b></sup> But He spoke of the temple of His body.<br><br>
+     <sup><b>22</b></sup> When therefore He was raised from the dead, His disciples remembered that He had said this, and they believed the Scripture and the word which Jesus had spoken.<br><br>
+     <sup><b>23</b></sup> Now when He was in Jerusalem at the Passover, during the feast, many believed into His name when they saw the signs which He did.<br><br>
+     <sup><b>24</b></sup> But Jesus Himself did not entrust Himself to them, for He knew all men,<br><br>
+     <sup><b>25</b></sup> And because He did not need anyone to testify concerning man, for He Himself knew what was in man.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('john-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

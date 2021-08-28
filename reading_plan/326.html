@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="john-15"><a onclick="open_chapter('top', '43-john.html')">John 15</a></h4>
+  <p><sup><b>1</b></sup> I am the true vine, and My Father is the husbandman.<br><br>
+     <sup><b>2</b></sup> Every branch in Me that does not bear fruit, He takes it away; and every branch that bears fruit, He prunes it that it may bear more fruit.<br><br>
+     <sup><b>3</b></sup> You are already clean because of the word which I have spoken to you.<br><br>
+     <sup><b>4</b></sup> Abide in Me and I in you. As the branch cannot bear fruit of itself unless it abides in the vine, so neither can you unless you abide in Me.<br><br>
+     <sup><b>5</b></sup> I am the vine; you are the branches. He who abides in Me and I in him, he bears much fruit; for apart from Me you can do nothing.<br><br>
+     <sup><b>6</b></sup> If one does not abide in Me, he is cast out as a branch and is dried up; and they gather them and cast them into the fire, and they are burned.<br><br>
+     <sup><b>7</b></sup> If you abide in Me and My words abide in you, ask whatever you will, and it shall be done for you.<br><br>
+     <sup><b>8</b></sup> In this is My Father glorified, that you bear much fruit and so you will become My disciples.<br><br>
+     <sup><b>9</b></sup> As the Father has loved Me, I also have loved you; abide in My love.<br><br>
+     <sup><b>10</b></sup> If you keep My commandments, you will abide in My love; even as I have kept My Father’s commandments and abide in His love.<br><br>
+     <sup><b>11</b></sup> These things I have spoken to you that My joy may be in you and that your joy may be made full.<br><br>
+     <sup><b>12</b></sup> This is My commandment, that you love one another even as I have loved you.<br><br>
+     <sup><b>13</b></sup> No one has greater love than this, that one lay down his life for his friends.<br><br>
+     <sup><b>14</b></sup> You are My friends if you do what I command you.<br><br>
+     <sup><b>15</b></sup> No longer do I call you slaves, for the slave does not know what his master is doing; but I have called you friends, for all the things which I have heard from My Father I have made known to you.<br><br>
+     <sup><b>16</b></sup> You did not choose Me, but I chose you, and I set you that you should go forth and bear fruit and that your fruit should remain, that whatever you ask the Father in My name, He may give you.<br><br>
+     <sup><b>17</b></sup> These things I command you that you may love one another.<br><br>
+     <sup><b>18</b></sup> If the world hates you, know that it has hated Me before you.<br><br>
+     <sup><b>19</b></sup> If you were of the world, the world would love its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you.<br><br>
+     <sup><b>20</b></sup> Remember the word which I said to you, A slave is not greater than his master. If they have persecuted Me, they will persecute you also; if they have kept My word, they will keep yours also.<br><br>
+     <sup><b>21</b></sup> But all these things they will do to you because of My name, because they do not know Him who sent Me.<br><br>
+     <sup><b>22</b></sup> If I had not come and spoken to them, they would not have sin; but now they have no excuse for their sin.<br><br>
+     <sup><b>23</b></sup> He who hates Me hates My Father also.<br><br>
+     <sup><b>24</b></sup> If I did not do among them the works which no one else has done, they would not have sin; but now they have both seen and hated both Me and My Father.<br><br>
+     <sup><b>25</b></sup> But it is so that the word written in their law may be fulfilled, “They hated Me without cause.”<br><br>
+     <sup><b>26</b></sup> But when the Comforter comes, whom I will send to you from the Father, the Spirit of reality, who proceeds from the Father, He will testify concerning Me;<br><br>
+     <sup><b>27</b></sup> And you testify also, because from the beginning you have been with Me.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('john-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

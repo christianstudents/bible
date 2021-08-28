@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="john-17"><a onclick="open_chapter('top', '43-john.html')">John 17</a></h4>
+  <p><sup><b>1</b></sup> These things Jesus spoke, and lifting up His eyes to heaven, He said, Father, the hour has come; glorify Your Son that the Son may glorify You;<br><br>
+     <sup><b>2</b></sup> Even as You have given Him authority over all flesh to give eternal life to all whom You have given Him.<br><br>
+     <sup><b>3</b></sup> And this is eternal life, that they may know You, the only true God, and Him whom You have sent, Jesus Christ.<br><br>
+     <sup><b>4</b></sup> I have glorified You on earth, finishing the work which You have given Me to do.<br><br>
+     <sup><b>5</b></sup> And now, glorify Me along with Yourself, Father, with the glory which I had with You before the world was.<br><br>
+     <sup><b>6</b></sup> I have manifested Your name to the men whom You gave Me out of the world. They were Yours, and You gave them to Me, and they have kept Your word.<br><br>
+     <sup><b>7</b></sup> Now they have come to know that all that You have given Me is from You,<br><br>
+     <sup><b>8</b></sup> For the words which You gave Me I have given to them, and they received them and knew truly that I came forth from You, and they have believed that You sent Me.<br><br>
+     <sup><b>9</b></sup> I ask concerning them; I do not ask concerning the world, but concerning those whom You have given Me, for they are Yours;<br><br>
+     <sup><b>10</b></sup> And all that is Mine is Yours, and Yours Mine; and I have been glorified in them.<br><br>
+     <sup><b>11</b></sup> And I am no longer in the world; yet they are in the world, and I am coming to You. Holy Father, keep them in Your name, which You have given to Me, that they may be one even as We are.<br><br>
+     <sup><b>12</b></sup> When I was with them, I kept them in Your name, which You have given to Me, and I guarded them; and not one of them perished, except the son of perdition, that the Scripture might be fulfilled.<br><br>
+     <sup><b>13</b></sup> But now I am coming to You, and these things I speak in the world that they may have My joy made full in themselves.<br><br>
+     <sup><b>14</b></sup> I have given them Your word, and the world has hated them, because they are not of the world even as I am not of the world.<br><br>
+     <sup><b>15</b></sup> I do not ask that You would take them out of the world, but that You would keep them out of the hands of the evil one.<br><br>
+     <sup><b>16</b></sup> They are not of the world, even as I am not of the world.<br><br>
+     <sup><b>17</b></sup> Sanctify them in the truth; Your word is truth.<br><br>
+     <sup><b>18</b></sup> As You have sent Me into the world, I also have sent them into the world.<br><br>
+     <sup><b>19</b></sup> And for their sake I sanctify Myself, that they themselves also may be sanctified in truth.<br><br>
+     <sup><b>20</b></sup> And I do not ask concerning these only, but concerning those also who believe into Me through their word,<br><br>
+     <sup><b>21</b></sup> That they all may be one; even as You, Father, are in Me and I in You, that they also may be in Us; that the world may believe that You have sent Me.<br><br>
+     <sup><b>22</b></sup> And the glory which You have given Me I have given to them, that they may be one, even as We are one;<br><br>
+     <sup><b>23</b></sup> I in them, and You in Me, that they may be perfected into one, that the world may know that You have sent Me and have loved them even as You have loved Me.<br><br>
+     <sup><b>24</b></sup> Father, concerning that which You have given Me, I desire that they also may be with Me where I am, that they may behold My glory, which You have given Me, for You loved Me before the foundation of the world.<br><br>
+     <sup><b>25</b></sup> Righteous Father, though the world has not known You, yet I have known You, and these have known that You have sent Me.<br><br>
+     <sup><b>26</b></sup> And I have made Your name known to them and will yet make it known, that the love with which You have loved Me may be in them, and I in them.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('john-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

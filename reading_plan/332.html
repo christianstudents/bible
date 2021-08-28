@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="john-21"><a onclick="open_chapter('top', '43-john.html')">John 21</a></h4>
+  <p><sup><b>1</b></sup> After these things Jesus manifested Himself again to the disciples at the Sea of Tiberias. And He manifested Himself in this way:<br><br>
+     <sup><b>2</b></sup> Simon Peter and Thomas, called Didymus, and Nathanael from Cana of Galilee and the sons of Zebedee and two others of His disciples were there together.<br><br>
+     <sup><b>3</b></sup> Simon Peter said to them, I am going fishing. They said to him, We also are coming with you. They went forth and got into the boat, and that night they caught nothing.<br><br>
+     <sup><b>4</b></sup> Now as soon as the morning broke, Jesus stood on the shore; however the disciples did not know that it was Jesus.<br><br>
+     <sup><b>5</b></sup> Then Jesus said to them, Little children, you do not have any fish to eat, do you? They answered Him, No.<br><br>
+     <sup><b>6</b></sup> And He said to them, Cast the net on the right side of the boat, and you will find some. They cast therefore, and they were no longer able to haul it in because of the abundance of fish.<br><br>
+     <sup><b>7</b></sup> Then that disciple whom Jesus loved said to Peter, It is the Lord! Therefore when Simon Peter heard that it was the Lord, he put his outer garment around himself, for he was naked; and he threw himself into the sea.<br><br>
+     <sup><b>8</b></sup> But the other disciples came in the little boat, for they were not far from the land, but about two hundred cubits away, dragging the net of fish.<br><br>
+     <sup><b>9</b></sup> Then when they got out onto the land, they saw a fire of coals laid there, and fish lying on it and bread.<br><br>
+     <sup><b>10</b></sup> Jesus said to them, Bring some of the fish that you have just now caught.<br><br>
+     <sup><b>11</b></sup> Simon Peter therefore went up and hauled the net to the land full of large fish, a hundred and fifty-three; and though there were so many, the net was not torn.<br><br>
+     <sup><b>12</b></sup> Jesus said to them, Come and have breakfast. But none of the disciples dared to inquire of Him, Who are you? knowing that it was the Lord.<br><br>
+     <sup><b>13</b></sup> Jesus came and took the bread and gave it to them, and the fish likewise.<br><br>
+     <sup><b>14</b></sup> This was now the third time that Jesus was manifested to the disciples after He had been raised from the dead.<br><br>
+     <sup><b>15</b></sup> Then when they had eaten breakfast, Jesus said to Simon Peter, Simon, son of John, do you love Me more than these? He said to Him, Yes, Lord, You know that I love You. He said to him, Feed My lambs.<br><br>
+     <sup><b>16</b></sup> He said to him again a second time, Simon, son of John, do you love Me? He said to Him, Yes, Lord, You know that I love You. He said to him, Shepherd My sheep.<br><br>
+     <sup><b>17</b></sup> He said to him the third time, Simon, son of John, do you love Me? Peter was grieved that He said to him the third time, Do you love Me? And he said to Him, Lord, You know all things; You know that I love You. Jesus said to him, Feed My sheep.<br><br>
+     <sup><b>18</b></sup> Truly, truly, I say to you, When you were younger, you girded yourself and walked where you wished; but when you grow old, you will stretch out your hands, and another will gird you and carry you where you do not wish to go.<br><br>
+     <sup><b>19</b></sup> Now this He said, signifying by what kind of death he would glorify God. And when He had said this, He said to him, Follow Me.<br><br>
+     <sup><b>20</b></sup> Peter, turning around, saw the disciple whom Jesus loved following, who also reclined on His breast at the supper and said, Lord, who is the one betraying You?<br><br>
+     <sup><b>21</b></sup> Peter therefore, seeing him, said to Jesus, Lord, and what about this man?<br><br>
+     <sup><b>22</b></sup> Jesus said to him, If I want him to remain until I come, what is that to you? You follow Me.<br><br>
+     <sup><b>23</b></sup> This word therefore went out among the brothers, that that disciple would not die, yet Jesus did not say to him that he would not die, but, If I want him to remain until I come, what is that to you?<br><br>
+     <sup><b>24</b></sup> This is the disciple who testifies concerning these things, and the one who has written these things; and we know that his testimony is true.<br><br>
+     <sup><b>25</b></sup> And there are also many other things which Jesus did, which, if they were written one by one, I suppose that not even the world itself could contain the books written.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('john-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
