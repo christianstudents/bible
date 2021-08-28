@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+    <h4 id="matthew-28"><a onclick="open_chapter('top', '40-matthew.html')">Matthew 28</a></h4>
+    <p><sup><b>1</b></sup> Now late on the Sabbath, as it began to dawn toward the first day of the week, Mary the Magdalene and the other Mary came to look at the grave.<br><br>
+         <sup><b>2</b></sup> And behold, there was a great earthquake, for an angel of the Lord descended out of heaven and came and rolled away the stone and sat upon it.<br><br>
+         <sup><b>3</b></sup> And his appearance was like lightning, and his garment as white as snow.<br><br>
+         <sup><b>4</b></sup> And for fear of him the guards shook and became like dead men.<br><br>
+         <sup><b>5</b></sup> And the angel answered and said to the women, Do not be afraid, for I know that you are seeking Jesus, the crucified.<br><br>
+         <sup><b>6</b></sup> He is not here, for He has been raised, even as He said. Come, see the place where He was lying.<br><br>
+         <sup><b>7</b></sup> And go quickly and tell His disciples that He has been raised from the dead, and behold, He goes before you into Galilee. There you will see Him. Behold, I have told you.<br><br>
+         <sup><b>8</b></sup> And they went away quickly from the tomb with fear and great joy and ran to report this to His disciples.<br><br>
+         <sup><b>9</b></sup> And behold, Jesus met them, saying, Rejoice! And they came to Him and took hold of His feet and worshipped Him.<br><br>
+         <sup><b>10</b></sup> Then Jesus said to them, Do not be afraid. Go and report to My brothers that they should go into Galilee, and there they will see Me.<br><br>
+         <sup><b>11</b></sup> And as they were going, behold, some from the guard came into the city and reported to the chief priests all that had happened.<br><br>
+         <sup><b>12</b></sup> And after the chief priests had gathered with the elders and had taken counsel, they gave a large sum of money to the soldiers,<br><br>
+         <sup><b>13</b></sup> Saying, Say this, His disciples came by night and stole Him away while we slept.<br><br>
+         <sup><b>14</b></sup> And if this comes to the governor’s ears, we will persuade him and make sure that you have nothing to worry about.<br><br>
+         <sup><b>15</b></sup> And they took the money and did as they were instructed. And this account has been widely spread among the Jews until this very day.<br><br>
+         <sup><b>16</b></sup> And the eleven disciples went to Galilee, to the mountain where Jesus directed them.<br><br>
+         <sup><b>17</b></sup> And when they saw Him, they worshipped Him, though some doubted.<br><br>
+         <sup><b>18</b></sup> And Jesus came and spoke to them, saying, All authority has been given to Me in heaven and on earth.<br><br>
+         <sup><b>19</b></sup> Go therefore and disciple all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit,<br><br>
+         <sup><b>20</b></sup> Teaching them to observe all that I have commanded you. And behold, I am with you all the days until the consummation of the age.<br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('matthew-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

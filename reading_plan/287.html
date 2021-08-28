@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+    <h4 id="mark-16"><a onclick="open_chapter('top', '41-mark.html')">Mark 16</a></h4>
+    <p><sup><b>1</b></sup> And when the Sabbath was past, Mary the Magdalene, and Mary the mother of James, and Salome bought spices so that they might come and anoint Him.<br><br>
+         <sup><b>2</b></sup> And very early on the first day of the week, they came to the tomb as the sun rose.<br><br>
+         <sup><b>3</b></sup> And they said to one another, Who will roll away the stone for us from the door of the tomb?<br><br>
+         <sup><b>4</b></sup> And when they looked up, they saw that the stone had been rolled away, for it was extremely large.<br><br>
+         <sup><b>5</b></sup> And when they entered into the tomb, they saw a young man sitting on the right, clothed in a white robe, and they were alarmed.<br><br>
+         <sup><b>6</b></sup> And he said to them, Do not be alarmed. You are seeking Jesus the Nazarene, who has been crucified. He has been raised; He is not here. Behold the place where they laid Him.<br><br>
+         <sup><b>7</b></sup> But go, tell His disciples and Peter that He is going before you into Galilee. There you will see Him, even as He told you.<br><br>
+         <sup><b>8</b></sup> And they went out and fled from the tomb, for trembling and astonishment had seized them. And they said nothing to anyone, for they were afraid.<br><br>
+         <sup><b>9</b></sup> Now after He had risen early on the first day of the week, He appeared first to Mary the Magdalene, from whom He had cast out seven demons.<br><br>
+         <sup><b>10</b></sup> She went and reported to those who had been with Him, who were mourning and weeping.<br><br>
+         <sup><b>11</b></sup> And when they heard that He was alive and had been seen by her, they did not believe.<br><br>
+         <sup><b>12</b></sup> And after these things, He appeared in a different form to two of them as they were walking on their way into the countryside.<br><br>
+         <sup><b>13</b></sup> And they went away and reported to the rest, but they did not believe them either.<br><br>
+         <sup><b>14</b></sup> And afterward He appeared to the eleven as they were reclining at table, and He reproached their unbelief and hardness of heart, because they did not believe those who had seen Him after He had risen.<br><br>
+         <sup><b>15</b></sup> And He said to them, Go into all the world and proclaim the gospel to all the creation.<br><br>
+         <sup><b>16</b></sup> He who believes and is baptized shall be saved, but he who does not believe shall be condemned.<br><br>
+         <sup><b>17</b></sup> And these signs will accompany those who believe: in My name they will cast out demons; they will speak with new tongues;<br><br>
+         <sup><b>18</b></sup> They will pick up serpents; and if they drink anything deadly, it shall by no means harm them; they will lay hands on the sick, and they will be well.<br><br>
+         <sup><b>19</b></sup> So then the Lord Jesus, after speaking to them, was taken up into heaven and sat at the right hand of God.<br><br>
+         <sup><b>20</b></sup> And they went out and preached everywhere, the Lord working with them and confirming the word by the accompanying signs. <br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('mark-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

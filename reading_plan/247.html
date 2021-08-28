@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+    <h4 id="matthew-4"><a onclick="open_chapter('top', '40-matthew.html')">Matthew 4</a></h4>
+    <p><sup><b>1</b></sup> Then Jesus was led up into the wilderness by the Spirit to be tempted by the devil.<br><br>
+         <sup><b>2</b></sup> And when He had fasted forty days and forty nights, afterward He became hungry.<br><br>
+         <sup><b>3</b></sup> And the tempter came and said to Him, If You are the Son of God, speak that these stones may become loaves of bread.<br><br>
+         <sup><b>4</b></sup> But He answered and said, It is written, “Man shall not live on bread alone, but on every word that proceeds out through the mouth of God.”<br><br>
+         <sup><b>5</b></sup> Then the devil took Him into the holy city and set Him on the wing of the temple,<br><br>
+         <sup><b>6</b></sup> And said to Him, If You are the Son of God, cast Yourself down; for it is written, “To His angels He shall give charge concerning You, and on their hands they shall bear You up, lest You strike Your foot against a stone.”<br><br>
+         <sup><b>7</b></sup> Jesus said to him, Again, it is written, “You shall not test the Lord your God.”<br><br>
+         <sup><b>8</b></sup> Again, the devil took Him to a very high mountain and showed Him all the kingdoms of the world and their glory.<br><br>
+         <sup><b>9</b></sup> Then Jesus said to him, Go away, Satan! For it is written, “You shall worship the Lord your God, and Him only shall you serve.”<br><br>
+         <sup><b>10</b></sup> Then the devil left Him, and behold, angels came and ministered to Him.<br><br>
+         <sup><b>11</b></sup> Now when He heard that John was delivered up, He withdrew into Galilee.<br><br>
+         <sup><b>12</b></sup> And leaving Nazareth, He came and dwelt in Capernaum, which is beside the sea in the borders of Zebulun and Naphtali,<br><br>
+         <sup><b>13</b></sup> In order that what was spoken through Isaiah the prophet might be fulfilled, saying,<br><br>
+         <sup><b>14</b></sup> “Land of Zebulun and land of Naphtali, the way to the sea, beyond the Jordan, Galilee of the Gentiles:<br><br>
+         <sup><b>15</b></sup> The people sitting in darkness have seen a great light; and to those sitting in the region and shadow of death, to them light has risen.”<br><br>
+         <sup><b>16</b></sup> From that time Jesus began to proclaim and to say, Repent, for the kingdom of the heavens has drawn near.<br><br>
+         <sup><b>17</b></sup> And while He was walking beside the Sea of Galilee, He saw two brothers, Simon, who is called Peter, and Andrew his brother, casting a net into the sea, for they were fishermen.<br><br>
+         <sup><b>18</b></sup> And He said to them, Come after Me, and I will make you fishers of men.<br><br>
+         <sup><b>19</b></sup> And immediately leaving the nets, they followed Him.<br><br>
+         <sup><b>20</b></sup> And going on from there, He saw another two brothers, James the son of Zebedee and John his brother, in the boat with Zebedee their father, mending their nets; and He called them.<br><br>
+         <sup><b>21</b></sup> And immediately leaving the boat and their father, they followed Him.<br><br>
+         <sup><b>22</b></sup> And Jesus went about in all of Galilee, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every sickness among the people.<br><br>
+         <sup><b>23</b></sup> And the report concerning Him went out into all of Syria; and they brought to Him all who were ill, those afflicted with various diseases and torments and those possessed by demons and epileptics and paralytics; and He healed them.<br><br>
+         <sup><b>24</b></sup> And great crowds followed Him from Galilee and Decapolis and Jerusalem and Judea and from beyond the Jordan.<br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('matthew-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
