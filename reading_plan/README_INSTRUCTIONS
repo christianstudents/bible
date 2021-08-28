@@ -1,9 +1,22 @@
-How to add readings as of 7/2/2021 [might change later]:
+How to add readings as of 8/28/2021 [might change later]:
 
-day 182 = July 1
+day 244 = Sept 1 (Not a leap year)
 
 To add a reading, create a new html file called n.html where n refers to the
-nth day of reading. Ex: 183.html would be the reading for July 2. Copy and paste
-any already existing reading file. Then go into the Bible folder and find the
-corresponding reading. Copy and paste the chapter into the "bible-text" section
-of the html file.
+nth day of reading. Ex: 245.html would be the reading for Sept 2.
+(note: see calendar.txt for a table of which number
+corresponds to which day of the month)
+
+Copy and paste any already existing reading file. Then go into the Bible
+folder and find the corresponding chapter. Copy and paste the chapter
+into the "bible-text" section of the html file.
+
+Additionally, for documentation, please modify the top of the document
+<!--Date: MM/DD--> to match the date of the current reading being entered.
+
+Finally, when moving onto a different book (i.e. going from entering the last
+chapter of Matthew to the last chapter of Mark) replace instances of the previous
+book with the book you are on.
+
+All parts that need to be modified are marked with
+<!--CHANGE ME--> and <!--CHANGE ME (END)-->
