@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Malachi</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="malachi-2"><a onclick="open_chapter('top', '39-malachi.html')">Malachi 2</a></h4>
+  <p><sup><b>1</b></sup> And now this commandment is for you, O priests.<br><br>
+     <sup><b>2</b></sup> If you will not hear and take it to heart to give glory to My name, says Jehovah of hosts, I will send the curse among you, and I will curse your blessings; indeed I have cursed them <i>already</i> because you have not taken <i>it</i> to heart.<br><br>
+     <sup><b>3</b></sup> I will rebuke your seed and spread dung upon your faces, the dung of your feasts; and they will take you away with it.<br><br>
+     <sup><b>4</b></sup> And you will know that I have sent this commandment to you, that My covenant may remain with Levi, says Jehovah of hosts.<br><br>
+     <sup><b>5</b></sup> My covenant was with him as life and peace; and I gave these to him that he might fear; and he did fear Me, and he did stand in awe of My name.<br><br>
+     <sup><b>6</b></sup> The law of truth was in his mouth, and no wrong was found in his lips; in peace and uprightness he walked with Me, and he turned many away from iniquity.<br><br>
+     <sup><b>7</b></sup> For the priest’s lips should keep knowledge, and <i>men</i> should seek instruction from his mouth, for he is the messenger of Jehovah of hosts.<br><br>
+     <sup><b>8</b></sup> But you have turned away from the way; you have caused many to stumble at the law; you have corrupted the covenant of Levi, says Jehovah of hosts.<br><br>
+     <sup><b>9</b></sup> Therefore I also have made you despicable and base before all the people to the same extent that you have not kept My ways but have been respecters of persons in the law.<br><br>
+     <sup><b>10</b></sup> Have we not all one Father? Has not one God created us? Why are we treacherous, each one to his brother, thus profaning the covenant of our fathers?<br><br>
+     <sup><b>11</b></sup> Judah has been treacherous, and an abomination has been done in Israel and in Jerusalem; for Judah has profaned the sanctuary of Jehovah, which He loves, and has married the daughter of a foreign god.<br><br>
+     <sup><b>12</b></sup> As regards the man who does <i>this,</i> Jehovah will cut off from the tents of Jacob him who wakes and him who answers and him who offers a sacrifice to Jehovah of hosts.<br><br>
+     <sup><b>13</b></sup> And this second thing you do: You cover the altar of Jehovah with tears, with weeping and sighing, so that He no longer regards the sacrifice or receives <i>it</i> with pleasure from your hand.<br><br>
+     <sup><b>14</b></sup> Yet you say, For what reason? Because Jehovah has been the witness between you and the wife of your youth, to whom you have been treacherous; yet she is your companion and your wife of covenant.<br><br>
+     <sup><b>15</b></sup> But did He not make <i>them</i> one? And the remnant of the Spirit was His. And why the one? He sought the seed of God. Take heed then to your spirit, and let no one be treacherous to the wife of his youth.<br><br>
+     <sup><b>16</b></sup> For I hate divorce, says Jehovah the God of Israel; and he <i>who does it</i> behaves in violence, says Jehovah of hosts. Take heed then to your spirit, and do not be treacherous.<br><br>
+     <sup><b>17</b></sup> You have wearied Jehovah with your words; but you say, How have we wearied <i>Him?</i> By saying, Everyone who does evil is good in the sight of Jehovah, and He delights in them; or, Where is the God of justice?<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('malachi-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

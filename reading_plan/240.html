@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Malachi</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="malachi-4"><a onclick="open_chapter('top', '39-malachi.html')">Malachi 4</a></h4>
+  <p><sup><b>1</b></sup> For indeed the day comes, burning like a furnace, and all the proud ones and all the ones who act wickedly will be stubble; and the coming day will set them ablaze, says Jehovah of hosts, so that it will not leave them root or branch.<br><br>
+     <sup><b>2</b></sup> But unto you who fear My name will the Sun of righteousness arise with healing in His wings, and you will go forth and leap about like well-fed calves.<br><br>
+     <sup><b>3</b></sup> And you will trample the wicked, for they will be ashes under the soles of your feet in the day that I prepare, says Jehovah of hosts.<br><br>
+     <sup><b>4</b></sup> Remember the law of Moses My servant, which I commanded him in Horeb for all Israel, <i>that is,</i> the statutes and the ordinances.<br><br>
+     <sup><b>5</b></sup> I am about to send Elijah the prophet to you before the great and terrible day of Jehovah comes;<br><br>
+     <sup><b>6</b></sup> And he will turn the heart of the fathers to the children and the heart of the children to their fathers, lest I come and strike the land with a curse.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('malachi-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
