@@ -1,0 +1,27 @@
+Matthew: 28 (9/1-9/28)
+Mark: 16 (9/29-10/14)
+Luke: 24 (10/15-11/7)
+John: 21 (11/8-11/28)
+Acts: 28 (11/29-12/26)
+Romans: 16 (12/27-1/11)
+1 Cor.: 16
+2 Cor.: 13
+Gal: 6
+Eph: 6
+Phil: 4
+Col: 4
+1 Thes: 5
+2 Thes: 3
+1 Tim: 6
+2 Tim: 4
+Titus: 3
+Philem: 1
+Heb: 13
+James: 5
+1 Pet: 5
+2 Pet: 3
+1 John: 5
+2 John: 1
+3 John: 1
+Jude: 1
+Rev: 22
