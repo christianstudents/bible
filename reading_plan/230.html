@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-5"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 5</a></h4>
+  <p><sup><b>1</b></sup> Then I lifted up my eyes again and I saw, and there was a flying scroll.<br><br>
+     <sup><b>2</b></sup> And he said to me, What do you see? And I said, I see a flying scroll, its length twenty cubits and its breadth ten cubits.<br><br>
+     <sup><b>3</b></sup> Then he said to me, This is the curse that goes forth over the face of all the land; for everyone who steals will be purged according to what is on one side, and everyone who swears will be purged according to what is on the other side.<br><br>
+     <sup><b>4</b></sup> I will cause it to go forth, declares Jehovah of hosts; and it will enter the house of him who steals and the house of him who swears falsely by My name; and it will lodge overnight within his house and consume it, both with its timbers and its stones.<br><br>
+     <sup><b>5</b></sup> Then the angel who spoke with me went forth and said to me, Lift up now your eyes and see what this is that goes forth.<br><br>
+     <sup><b>6</b></sup> And I said, What is it? And he said, This is the ephah vessel that goes forth; and he said, This is their appearance in all the land;<br><br>
+     <sup><b>7</b></sup> (Then a lead cover was lifted up) and this is a woman sitting within the ephah vessel.<br><br>
+     <sup><b>8</b></sup> Then he said, This is Wickedness. And he threw her down into the midst of the ephah vessel and threw the lead weight over its opening.<br><br>
+     <sup><b>9</b></sup> Then I lifted up my eyes and I looked, and there were two women going forth, and the wind was in their wings; and they had wings like the wings of a stork. And they lifted up the ephah vessel between the earth and the heavens.<br><br>
+     <sup><b>10</b></sup> And I said to the angel who spoke with me, Where are they taking the ephah vessel?<br><br>
+     <sup><b>11</b></sup> And he said to me, To build a house for her in the land of Shinar; and when it is prepared, she will be set there in her own place.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

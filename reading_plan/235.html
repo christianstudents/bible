@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-10"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 10</a></h4>
+  <p><sup><b>1</b></sup> Ask rain of Jehovah / At the time of spring rain, / <i>Of</i> Jehovah who makes the lightning, / And He will give them showers of rain, / To everyone herbage in the field.<br><br>
+     <sup><b>2</b></sup> For the teraphim have spoken vanity, / And the diviners have seen a lie / And have spoken false dreams; / They comforted in vain. / Therefore <i>the people</i> have wandered like sheep; / They are afflicted because there is no shepherd.<br><br>
+     <sup><b>3</b></sup> My anger is kindled against the shepherds, / And I will punish the male goats; / For Jehovah of hosts has visited His flock, the house of Judah, / And will make them like His horse of majesty in battle.<br><br>
+     <sup><b>4</b></sup> From him will come forth the cornerstone, from him the peg, / From him the battle bow, / From him every ruler together.<br><br>
+     <sup><b>5</b></sup> And they will be as mighty men trampling <i>their enemies</i> / In the mire of the streets in the battle; / And they will fight, for Jehovah is with them; / And the riders of horses will be put to shame.<br><br>
+     <sup><b>6</b></sup> And I will strengthen the house of Judah, / And I will save the house of Joseph; / And I will bring them back, for I have had compassion on them; / And they will be as though I had not rejected them; / For I am Jehovah their God, and I will answer them.<br><br>
+     <sup><b>7</b></sup> And <i>they of</i> Ephraim will be like a mighty man, / And their hearts will rejoice as if with wine; / Indeed, their children will see <i>it</i> and rejoice; / Their heart will exult in Jehovah.<br><br>
+     <sup><b>8</b></sup> I will whistle for them and gather them, for I have redeemed them; / And they will multiply as they have multiplied.<br><br>
+     <sup><b>9</b></sup> And I will sow them among the peoples; and in distant lands they will remember Me; / And they will live with their children and return.<br><br>
+     <sup><b>10</b></sup> I will also bring them back from the land of Egypt / And gather them out of Assyria; / And to the land of Gilead and Lebanon I will bring them; / And there will not be <i>enough room</i> found for them.<br><br>
+     <sup><b>11</b></sup> And He will pass through the sea <i>of</i> distress / And strike the waves in the sea, / And all the depths of the Nile will dry up; / And the pride of Assyria will be brought down, / And the scepter of Egypt will depart.<br><br>
+     <sup><b>12</b></sup> And I will strengthen them in Jehovah, / And they will walk about in His name, / Declares Jehovah.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

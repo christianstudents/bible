@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-12"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 12</a></h4>
+  <p><sup><b>1</b></sup> The burden of the word of Jehovah concerning Israel. <i>Thus</i> declares Jehovah, who stretches forth the heavens and lays the foundations of the earth and forms the spirit of man within him,<br><br>
+     <sup><b>2</b></sup> I am about to make Jerusalem a cup of reeling to all the surrounding peoples; and when <i>what happens</i> in siege is upon Jerusalem, it will be upon Judah as well.<br><br>
+     <sup><b>3</b></sup> And in that day I will make Jerusalem a burdensome stone to all the peoples; all who burden themselves with her will be cut up. Indeed all the nations of the earth will be gathered against her.<br><br>
+     <sup><b>4</b></sup> In that day, declares Jehovah, I will strike every horse with bewilderment and its rider with madness; and I will open My eyes upon the house of Judah and will strike every horse of the peoples with blindness.<br><br>
+     <sup><b>5</b></sup> Then the leaders of Judah will say in their heart, The inhabitants of Jerusalem, by Jehovah of hosts their God, are my strength.<br><br>
+     <sup><b>6</b></sup> In that day I will make the leaders of Judah like a fire pot on wood and like a torch of fire among sheaves, and they will consume all the surrounding peoples on the right and on the left. And Jerusalem will dwell again in her own place, in Jerusalem.<br><br>
+     <sup><b>7</b></sup> And Jehovah will save the tents of Judah first, so that the beauty of the house of David and the beauty of the inhabitants of Jerusalem may not be magnified above Judah.<br><br>
+     <sup><b>8</b></sup> In that day Jehovah will defend the inhabitants of Jerusalem; and he who is feeble among them in that day will be like David, and the house of David will be like God, like the Angel of Jehovah before them.<br><br>
+     <sup><b>9</b></sup> And in that day I will seek to destroy all the nations that come against Jerusalem.<br><br>
+     <sup><b>10</b></sup> And I will pour out on the house of David and on the inhabitants of Jerusalem the Spirit of grace and of supplications; and they will look upon Me, whom they have pierced; and they will wail over Him with wailing as for an only son and cry bitterly over Him with bitter crying as for a firstborn son.<br><br>
+     <sup><b>11</b></sup> In that day there will be great wailing in Jerusalem, like the wailing of Hadad-rimmon in the valley of Megiddon.<br><br>
+     <sup><b>12</b></sup> And the land will wail, every family by itself: the family of the house of David by itself, and their wives by themselves; the family of the house of Nathan by itself, and their wives by themselves;<br><br>
+     <sup><b>13</b></sup> The family of the house of Levi by itself, and their wives by themselves; the family of the Shimeites by itself, and their wives by themselves;<br><br>
+     <sup><b>14</b></sup> All the families that remain, every family by itself, and their wives by themselves.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-7"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 7</a></h4>
+  <p><sup><b>1</b></sup> And in the fourth year of Darius the king the word of Jehovah came to Zechariah on the fourth <i>day</i> of the ninth month, <i>the month</i> Chislev.<br><br>
+     <sup><b>2</b></sup> Now <i>the people of</i> Bethel had sent Sharezer and Regemmelech and their men to entreat the favor of Jehovah<br><br>
+     <sup><b>3</b></sup> By speaking to the priests who belong to the house of Jehovah of hosts and to the prophets, saying, Shall I weep in the fifth month and separate myself, as I have done these many years?<br><br>
+     <sup><b>4</b></sup> Then the word of Jehovah of hosts came to me, saying,<br><br>
+     <sup><b>5</b></sup> Speak to all the people of the land and to the priests, saying, When you fasted and mourned in the fifth and seventh <i>months,</i> even for these seventy years, was it at all for Me that you fasted?<br><br>
+     <sup><b>6</b></sup> And when you eat and when you drink, are you not the ones eating and are you not the ones drinking?<br><br>
+     <sup><b>7</b></sup> Are not <i>these</i> the words which Jehovah proclaimed by the former prophets when Jerusalem was inhabited and prosperous and <i>had</i> cities round about her, when the Negev and the lowlands were inhabited?<br><br>
+     <sup><b>8</b></sup> And the word of Jehovah came to Zechariah, saying,<br><br>
+     <sup><b>9</b></sup> Thus speaks Jehovah of hosts, saying, Judge with judgment of truth, and show lovingkindness and compassion each to his brother;<br><br>
+     <sup><b>10</b></sup> And do not oppress the widow and the orphan, the stranger and the poor; and let none of you think evil in your hearts about his brother.<br><br>
+     <sup><b>11</b></sup> But they refused to listen, and they turned a stubborn shoulder and closed their ears from hearing;<br><br>
+     <sup><b>12</b></sup> And they set their hearts like adamant so as not to hear the instruction and the words which Jehovah of hosts sent by His Spirit through the former prophets; therefore great wrath came from Jehovah of hosts.<br><br>
+     <sup><b>13</b></sup> And as He called and they would not hear, so they called and I would not hear, says Jehovah of hosts;<br><br>
+     <sup><b>14</b></sup> But with a storm I scattered them away upon all the nations, whom they did not know. Thus the land is desolate behind them, so that no one passes through <i>it</i> and no one returns <i>to it;</i> for they have made the desirable land desolate.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

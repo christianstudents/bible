@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-11"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 11</a></h4>
+  <p><sup><b>1</b></sup> Open your doors, O Lebanon, / That the fire may devour your cedars.<br><br>
+     <sup><b>2</b></sup> Howl, O fir tree, for the cedar has fallen, / Because the majestic <i>trees</i> are devastated. / Howl, O oaks of Bashan, / For the impenetrable forest is brought down.<br><br>
+     <sup><b>3</b></sup> The sound of the howling of shepherds! / For their majesty is devastated. / The sound of the roaring of young lions! / For the pride of Jordan is devastated.<br><br>
+     <sup><b>4</b></sup> Thus says Jehovah my God, Shepherd the flock of slaughter,<br><br>
+     <sup><b>5</b></sup> Whose owners slaughter them and are not punished; and they who sell them say, Blessed be Jehovah, for I am rich; and their own shepherds do not spare them.<br><br>
+     <sup><b>6</b></sup> For I will no longer spare the inhabitants of the land, declares Jehovah; but I am about to cause each man to fall into his neighbor’s hand and into the hand of his king; and they will strike the land, and I will not deliver them from their hand.<br><br>
+     <sup><b>7</b></sup> So I shepherded the flock of slaughter, and thereby the afflicted of the flock. And I took to myself two staffs; one I called Favor, and the other I called Bonds; and I shepherded the flock.<br><br>
+     <sup><b>8</b></sup> Then I destroyed the three shepherds in one month; for my soul was impatient with them, and their soul also detested me.<br><br>
+     <sup><b>9</b></sup> Then I said, I will not shepherd you. What is to die will die, and what is to be destroyed will be destroyed, and those who are left will each eat one another’s flesh.<br><br>
+     <sup><b>10</b></sup> And I took my staff, Favor, and I broke it in pieces so as to break my covenant which I had made with all the peoples.<br><br>
+     <sup><b>11</b></sup> And it was broken in that day; and thus the afflicted of the flock, who watched me, knew that it was the word of Jehovah.<br><br>
+     <sup><b>12</b></sup> And I said to them, If it is good in your sight, give <i>me</i> my wages; but if not, do not bother. So they weighed out my wages, thirty <i>pieces</i> of silver.<br><br>
+     <sup><b>13</b></sup> And Jehovah said to me, Throw it to the potter, that magnificent price that I am priced with by them. So I took the thirty <i>pieces</i> of silver and threw them to the potter, into the house of Jehovah.<br><br>
+     <sup><b>14</b></sup> Then I broke my second staff, Bonds, in pieces, so as to break the brotherhood between Judah and Israel.<br><br>
+     <sup><b>15</b></sup> And Jehovah said to me, Again, take the equipment of a foolish shepherd.<br><br>
+     <sup><b>16</b></sup> For I am about to raise up a shepherd in the land who will not visit those who are perishing, nor seek the scattered, nor heal what is broken, nor sustain what stands, but will devour the flesh of the fat <i>ones</i> and tear off their hooves.<br><br>
+     <sup><b>17</b></sup> Woe to the worthless shepherd, / Who abandons the flock! / The sword <i>will fall</i> on his arm / And on his right eye. / His arm will be utterly withered, / And his right eye will be totally darkened.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
