@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="acts-3"><a onclick="open_chapter('top', '44-acts.html')">Acts 3</a></h4>
+  <p><sup><b>1</b></sup> Now Peter and John were going up into the temple at the ninth-hour prayer;<br><br>
+     <sup><b>2</b></sup> And a certain man who had been lame from his mother’s womb was being carried there, whom they had laid day by day at the door of the temple which is called Beautiful to ask alms from those entering into the temple.<br><br>
+     <sup><b>3</b></sup> And he, seeing Peter and John about to go into the temple, began to ask to receive alms.<br><br>
+     <sup><b>4</b></sup> And Peter, gazing at him with John, said, Look at us!<br><br>
+     <sup><b>5</b></sup> And he turned his attention to them, expecting to receive something from them.<br><br>
+     <sup><b>6</b></sup> But Peter said, Silver and gold I do not possess, but what I have, this I give to you: In the name of Jesus Christ the Nazarene rise up and walk.<br><br>
+     <sup><b>7</b></sup> And he seized him by the right hand and raised him up; and instantly his feet and ankles were made strong.<br><br>
+     <sup><b>8</b></sup> And leaping up and about, he stood and began to walk, and he entered with them into the temple, walking and leaping and praising God.<br><br>
+     <sup><b>9</b></sup> And all the people saw him walking and praising God,<br><br>
+     <sup><b>10</b></sup> And they recognized him, that he was the one who had been sitting for alms at the temple’s Beautiful Gate; and they were filled with amazement and astonishment at what had happened to him.<br><br>
+     <sup><b>11</b></sup> And while he was holding on to Peter and John, all the people ran together toward them at the portico called Solomon’s, greatly amazed.<br><br>
+     <sup><b>12</b></sup> And when Peter saw this, he replied to the people, Men of Israel, why are you marveling at this? Or why are you gazing at us, as though by our own power or godliness we have made him walk?<br><br>
+     <sup><b>13</b></sup> The God of Abraham and Isaac and Jacob, the God of our fathers, has glorified His Servant Jesus, whom you delivered up and denied in the presence of Pilate, when he had decided to release Him.<br><br>
+     <sup><b>14</b></sup> But you denied the holy and righteous One and asked that a man who was a murderer be granted to you;<br><br>
+     <sup><b>15</b></sup> And the Author of life you killed, whom God has raised from the dead, of which we are witnesses.<br><br>
+     <sup><b>16</b></sup> And upon faith in His name, His name has made this man strong, whom you behold and know; and the faith which is through Him has given him this wholeness of health before you all.<br><br>
+     <sup><b>17</b></sup> And now, brothers, I know that you acted in ignorance, as also your rulers did;<br><br>
+     <sup><b>18</b></sup> But the things which God announced beforehand through the mouth of all the prophets, that His Christ would suffer, He has thus fulfilled.<br><br>
+     <sup><b>19</b></sup> Repent therefore and turn, that your sins may be wiped away,<br><br>
+     <sup><b>20</b></sup> So that seasons of refreshing may come from the presence of the Lord and that He may send the Christ, who has been previously appointed for you, Jesus,<br><br>
+     <sup><b>21</b></sup> Whom heaven must indeed receive until the times of the restoration of all things, of which God spoke through the mouth of His holy prophets from of old.<br><br>
+     <sup><b>22</b></sup> Moses said, “A Prophet will the Lord your God raise up unto you from your brothers, like me; Him shall you hear in whatever things He speaks to you.<br><br>
+     <sup><b>23</b></sup> And it shall be that every soul who does not hear that Prophet shall be utterly destroyed from among the people.”<br><br>
+     <sup><b>24</b></sup> And also all the prophets, from Samuel and those in succession after him, as many as spoke, also announced these days.<br><br>
+     <sup><b>25</b></sup> You are the sons of the prophets and of the covenant which God covenanted with your fathers, saying to Abraham, “And in your seed shall all the families of the earth be blessed.”<br><br>
+     <sup><b>26</b></sup> To you first, God, having raised up His Servant, has sent Him to bless you in turning each of you away from your wicked deeds. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('acts-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
