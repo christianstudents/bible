@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Zechariah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="zechariah-1"><a onclick="open_chapter('top', '38-zechariah.html')">Zechariah 1</a></h4>
+  <p><sup><b>1</b></sup> In the eighth month, in the second year of Darius, the word of Jehovah came to Zechariah the prophet, the son of Berechiah, the son of Iddo, saying,<br><br>
+     <sup><b>2</b></sup> Jehovah was extremely angry with your fathers;<br><br>
+     <sup><b>3</b></sup> Therefore say to them, Thus says Jehovah of hosts, Return to Me, declares Jehovah of hosts, and I will return to you, says Jehovah of hosts.<br><br>
+     <sup><b>4</b></sup> Do not be like your fathers, to whom the former prophets cried, saying, Thus says Jehovah of hosts, Turn from your evil ways and from your evil deeds; but they did not hear nor hearken to Me, declares Jehovah.<br><br>
+     <sup><b>5</b></sup> Your fathers, where are they? And the prophets, do they live forever?<br><br>
+     <sup><b>6</b></sup> But My words and My statutes, which I commanded My servants the prophets, did they not overtake your fathers, so that they returned and said, As Jehovah of hosts has thought to do with us, according to our ways and according to our deeds, so has He done with us?<br><br>
+     <sup><b>7</b></sup> On the twenty-fourth day of the eleventh month, which is the month Shebat, in the second year of Darius, the word of Jehovah came to Zechariah the prophet, the son of Berechiah, the son of Iddo, saying,<br><br>
+     <sup><b>8</b></sup> I saw during the night, and behold, a man was riding upon a red horse; and He was standing among the myrtle trees that were in the bottoms; and behind Him there were red, reddish-brown, and white horses.<br><br>
+     <sup><b>9</b></sup> Then I said, What are these, sir? And the angel who spoke with me said to me, I will show you what these are.<br><br>
+     <sup><b>10</b></sup> And the man who stood among the myrtle trees answered and said, These are those whom Jehovah has sent to go to and fro on the earth.<br><br>
+     <sup><b>11</b></sup> And they answered the Angel of Jehovah, who was standing among the myrtle trees, and they said, We have gone to and fro on the earth, and indeed all the earth sits still and is quiet.<br><br>
+     <sup><b>12</b></sup> Then the Angel of Jehovah answered and said, O Jehovah of hosts, how long will You not have compassion on Jerusalem and on the cities of Judah, with which You have been indignant for these seventy years?<br><br>
+     <sup><b>13</b></sup> And Jehovah answered the angel who spoke with me with good words, with comforting words.<br><br>
+     <sup><b>14</b></sup> So the angel who spoke to me said to me, Cry out, saying, Thus says Jehovah of hosts: I am greatly jealous for Jerusalem and for Zion;<br><br>
+     <sup><b>15</b></sup> And I am extremely angry with the nations, who are at ease; for I was only a little angry, but their help increased the affliction.<br><br>
+     <sup><b>16</b></sup> Therefore thus says Jehovah, I return to Jerusalem with compassions; My house will be built in it, declares Jehovah of hosts, and a measuring line will be stretched over Jerusalem.<br><br>
+     <sup><b>17</b></sup> Cry out again, saying, Thus says Jehovah of hosts, My cities will again overflow with good, and Jehovah will again comfort Zion and will again choose Jerusalem.<br><br>
+     <sup><b>18</b></sup> Then I lifted up my eyes and looked, and there were four horns.<br><br>
+     <sup><b>19</b></sup> And I said to the angel who spoke with me, What are these? And he said to me, These are the horns that have scattered Judah, Israel, and Jerusalem.<br><br>
+     <sup><b>20</b></sup> Then Jehovah showed me four craftsmen.<br><br>
+     <sup><b>21</b></sup> And I said, What do these come to do? And he spoke, saying, These are the horns that have so scattered Judah that no man lifts up his head, but these have come to terrify them, to cast down the horns of the nations who have lifted up the horn against the land of Judah to scatter it.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('zechariah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
