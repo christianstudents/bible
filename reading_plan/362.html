@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="romans-2"><a onclick="open_chapter('top', '45-romans.html')">Romans 2</a></h4>
+  <p><sup><b>1</b></sup> Therefore you are without excuse, O every man who judges, for in what you judge another you condemn yourself; for you who judge practice the same things.<br><br>
+     <sup><b>2</b></sup> But we know that the judgment of God is according to truth upon those who practice such things.<br><br>
+     <sup><b>3</b></sup> And do you consider this, O man, who judge those who practice such things and do the same yourself, that you will escape the judgment of God?<br><br>
+     <sup><b>4</b></sup> Or do you despise the riches of His kindness and forbearance and long-suffering, not knowing that God’s kindness is leading you to repentance?<br><br>
+     <sup><b>5</b></sup> But, according to your hardness and your unrepentant heart, you are storing up for yourself wrath in the day of wrath and revelation of the righteous judgment of God,<br><br>
+     <sup><b>6</b></sup> Who will render to each according to his works:<br><br>
+     <sup><b>7</b></sup> To those who by endurance in good work seek glory and honor and incorruptibility, life eternal;<br><br>
+     <sup><b>8</b></sup> But to those who are selfishly contentious and disobedient to the truth and obey unrighteousness, wrath and fury.<br><br>
+     <sup><b>9</b></sup> Tribulation and anguish upon every soul of man who commits evil, both of Jew first and of Greek;<br><br>
+     <sup><b>10</b></sup> But glory and honor and peace to everyone who works good, both to Jew first and to Greek.<br><br>
+     <sup><b>11</b></sup> For there is no respect of persons with God.<br><br>
+     <sup><b>12</b></sup> For as many as have sinned without the law shall also perish without the law; and as many as have sinned under the law shall be judged by the law<br><br>
+     <sup><b>13</b></sup> (For it is not the hearers of the law who are righteous before God, but the doers of the law shall be justified.<br><br>
+     <sup><b>14</b></sup> For when Gentiles, who have no law, do by nature the things of the law, these, though they have no law, are a law to themselves,<br><br>
+     <sup><b>15</b></sup> Who show the work of the law written in their hearts, their conscience bearing witness with it and their reasonings, one with the other, accusing or even excusing them.)<br><br>
+     <sup><b>16</b></sup> In the day when God judges the secrets of men according to my gospel through Jesus Christ.<br><br>
+     <sup><b>17</b></sup> But if you bear the name of Jew, and rest upon the law, and boast in God,<br><br>
+     <sup><b>18</b></sup> And know the will, and approve the things that are more excellent, being instructed out of the law,<br><br>
+     <sup><b>19</b></sup> And have confidence that you yourself are a guide to the blind, a light to those in darkness,<br><br>
+     <sup><b>20</b></sup> One who disciplines the foolish, a teacher of babes, having the proper form of the knowledge and truth in the law;<br><br>
+     <sup><b>21</b></sup> You therefore who teach another, do you not teach yourself? You who preach not to steal, do you steal?<br><br>
+     <sup><b>22</b></sup> You who say not to commit adultery, do you commit adultery? You who abhor idols, do you rob their temples?<br><br>
+     <sup><b>23</b></sup> You who boast in the law, do you by transgression of the law dishonor God?<br><br>
+     <sup><b>24</b></sup> For “the name of God is blasphemed among the Gentiles because of you,” even as it is written.<br><br>
+     <sup><b>25</b></sup> For circumcision profits if you practice the law; but if you are a transgressor of the law, your circumcision has become uncircumcision.<br><br>
+     <sup><b>26</b></sup> If therefore the uncircumcision keeps the ordinances of the law, will not his uncircumcision be accounted as circumcision?<br><br>
+     <sup><b>27</b></sup> And the uncircumcision by nature, if he fulfills the law, will judge you who through the letter and circumcision are a transgressor of the law.<br><br>
+     <sup><b>28</b></sup> For he is not a Jew who is one outwardly; neither is circumcision that which is outward in the flesh.<br><br>
+     <sup><b>29</b></sup> But he is a Jew who is one inwardly; and circumcision is of the heart, in spirit, not in letter, whose praise is not from men, but from God. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
