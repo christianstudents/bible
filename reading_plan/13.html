@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/13-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1corinthians-3"><a onclick="open_chapter('top', '46-1corinthians.html')">1 Corinthians 3</a></h4>
+  <p><sup><b>1</b></sup> And I, brothers, was not able to speak to you as to spiritual men, but as to fleshy, as to infants in Christ.<br><br>
+     <sup><b>2</b></sup> I gave you milk to drink, not solid food, for you were not yet able to receive it. But neither yet now are you able,<br><br>
+     <sup><b>3</b></sup> For you are still fleshly. For if there is jealousy and strife among you, are you not fleshly and do you not walk according to the manner of man?<br><br>
+     <sup><b>4</b></sup> For when someone says, I am of Paul, and another, I of Apollos, are you not men of flesh?<br><br>
+     <sup><b>5</b></sup> What then is Apollos? And what is Paul? Ministers through whom you believed, even as the Lord gave to each one of them.<br><br>
+     <sup><b>6</b></sup> I planted, Apollos watered, but God caused the growth.<br><br>
+     <sup><b>7</b></sup> So then neither is he who plants anything nor he who waters, but God who causes the growth.<br><br>
+     <sup><b>8</b></sup> Now he who plants and he who waters are one, but each will receive his own reward according to his own labor.<br><br>
+     <sup><b>9</b></sup> For we are God’s fellow workers; you are God’s cultivated land, God’s building.<br><br>
+     <sup><b>10</b></sup> According to the grace of God given to me, as a wise master builder I have laid a foundation, and another builds upon it. But let each man take heed how he builds upon it.<br><br>
+     <sup><b>11</b></sup> For another foundation no one is able to lay besides that which is laid, which is Jesus Christ.<br><br>
+     <sup><b>12</b></sup> But if anyone builds upon the foundation gold, silver, precious stones, wood, grass, stubble,<br><br>
+     <sup><b>13</b></sup> The work of each will become manifest; for the day will declare it, because it is revealed by fire, and the fire itself will prove each one’s work, of what sort it is.<br><br>
+     <sup><b>14</b></sup> If anyone’s work which he has built upon the foundation remains, he will receive a reward;<br><br>
+     <sup><b>15</b></sup> If anyone’s work is consumed, he will suffer loss, but he himself will be saved, yet so as through fire.<br><br>
+     <sup><b>16</b></sup> Do you not know that you are the temple of God, and that the Spirit of God dwells in you?<br><br>
+     <sup><b>17</b></sup> If anyone destroys the temple of God, God will destroy him; for the temple of God is holy, and such are you.<br><br>
+     <sup><b>18</b></sup> Let no one deceive himself; if anyone thinks that he is wise among you in this age, let him become foolish that he may become wise.<br><br>
+     <sup><b>19</b></sup> For the wisdom of this world is foolishness with God; for it is written, “He grasps the wise in their craftiness”;<br><br>
+     <sup><b>20</b></sup> And again, “The Lord knows the reasonings of the wise, that they are vain.”<br><br>
+     <sup><b>21</b></sup> So then let no one boast in men, for all things are yours,<br><br>
+     <sup><b>22</b></sup> Whether Paul or Apollos or Cephas or the world or life or death or things present or things to come; all are yours,<br><br>
+     <sup><b>23</b></sup> But you are Christ’s, and Christ is God’s. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
