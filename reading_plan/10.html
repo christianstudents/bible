@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="romans-16"><a onclick="open_chapter('top', '45-romans.html')">Romans 16</a></h4>
+  <p><sup><b>1</b></sup> I commend to you Phoebe our sister, who is a deaconess of the church which is in Cenchrea,<br><br>
+     <sup><b>2</b></sup> That you receive her in the Lord in a manner worthy of the saints and assist her in whatever matter she may have need of you; for she herself has also been the patroness of many, of myself as well.<br><br>
+     <sup><b>3</b></sup> Greet Prisca and Aquila, my fellow workers in Christ Jesus,<br><br>
+     <sup><b>4</b></sup> Who risked their own necks for my life, to whom not only I give thanks, but also all the churches of the Gentiles;<br><br>
+     <sup><b>5</b></sup> And greet the church, which is in their house. Greet Epaenetus, my beloved, who is the firstfruits of Asia unto Christ.<br><br>
+     <sup><b>6</b></sup> Greet Mary, one who has labored much for you.<br><br>
+     <sup><b>7</b></sup> Greet Andronicus and Junia, my kinsmen and my fellow prisoners, who are of note among the apostles, who also were in Christ before me.<br><br>
+     <sup><b>8</b></sup> Greet Ampliatus, my beloved in the Lord.<br><br>
+     <sup><b>9</b></sup> Greet Urbanus, our fellow worker in Christ, and Stachys, my beloved.<br><br>
+     <sup><b>10</b></sup> Greet Apelles, approved in Christ. Greet those of the household of Aristobulus.<br><br>
+     <sup><b>11</b></sup> Greet Herodion, my kinsman. Greet those of the household of Narcissus who are in the Lord.<br><br>
+     <sup><b>12</b></sup> Greet Tryphaena and Tryphosa, who labor in the Lord. Greet Persis, the beloved sister, one who has labored much in the Lord.<br><br>
+     <sup><b>13</b></sup> Greet Rufus, chosen in the Lord, and his mother as well as mine.<br><br>
+     <sup><b>14</b></sup> Greet Asyncritus, Phlegon, Hermes, Patrobas, Hermas, and the brothers with them.<br><br>
+     <sup><b>15</b></sup> Greet Philologus and Julia, Nereus and his sister, and Olympas, and all the saints with them.<br><br>
+     <sup><b>16</b></sup> Greet one another with a holy kiss. All the churches of Christ greet you.<br><br>
+     <sup><b>17</b></sup> Now I exhort you, brothers, to mark those who make divisions and causes of stumbling contrary to the teaching which you have learned, and turn away from them.<br><br>
+     <sup><b>18</b></sup> For such men do not serve our Lord Christ, but their own stomach, and through smooth words and flattering speech deceive the hearts of the simple.<br><br>
+     <sup><b>19</b></sup> For the report of your obedience has reached to all; therefore I rejoice over you, but I want you to be wise as to what is good and guileless as to what is evil.<br><br>
+     <sup><b>20</b></sup> Now the God of peace will crush Satan under your feet shortly. The grace of our Lord Jesus be with you.<br><br>
+     <sup><b>21</b></sup> Timothy, my fellow worker, greets you, as well as Lucius and Jason and Sosipater, my kinsmen.<br><br>
+     <sup><b>22</b></sup> I, Tertius, who write this epistle, greet you in the Lord.<br><br>
+     <sup><b>23</b></sup> Gaius, my host and host of the whole church, greets you. Erastus, the city treasurer, greets you, and Quartus the brother.<br><br>
+     <sup><b>24</b></sup> [Some ancient MSS add v.24, The grace of our Lord Jesus Christ be with you all. Amen.]<br><br>
+     <sup><b>25</b></sup> Now to Him who is able to establish you according to my gospel, that is, the proclamation of Jesus Christ, according to the revelation of the mystery, which has been kept in silence in the times of the ages<br><br>
+     <sup><b>26</b></sup> But has now been manifested, and through the prophetic writings, according to the command of the eternal God, has been made known to all the Gentiles for the obedience of faith;<br><br>
+     <sup><b>27</b></sup> To the only wise God through Jesus Christ, to Him be the glory forever and ever. Amen. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

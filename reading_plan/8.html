@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="romans-14"><a onclick="open_chapter('top', '45-romans.html')">Romans 14</a></h4>
+  <p><sup><b>1</b></sup> Now him who is weak in faith receive, but not for the purpose of passing judgment on his considerations.<br><br>
+     <sup><b>2</b></sup> One believes that he may eat all things, but he who is weak eats vegetables.<br><br>
+     <sup><b>3</b></sup> He who eats, let him not despise him who does not eat; and he who does not eat, let him not judge him who eats, for God has received him.<br><br>
+     <sup><b>4</b></sup> Who are you who judge another’s household servant? To his own master he stands or falls; and he will be made to stand, for the Lord is able to make him stand.<br><br>
+     <sup><b>5</b></sup> One judges one day above another; another judges every day alike. Let each be fully persuaded in his own mind.<br><br>
+     <sup><b>6</b></sup> He who regards that day, regards it to the Lord; and he who eats, eats to the Lord, for he gives thanks to God; and he who does not eat, does not eat to the Lord, and he gives thanks to God.<br><br>
+     <sup><b>7</b></sup> For none of us lives to himself, and none dies to himself;<br><br>
+     <sup><b>8</b></sup> For whether we live, we live to the Lord, and whether we die, we die to the Lord. Therefore whether we live or we die, we are the Lord’s.<br><br>
+     <sup><b>9</b></sup> For Christ died and lived again for this, that He might be Lord both of the dead and of the living.<br><br>
+     <sup><b>10</b></sup> But you, why do you judge your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God,<br><br>
+     <sup><b>11</b></sup> For it is written, “As I live, says the Lord, every knee shall bow to Me, and every tongue shall openly confess to God.”<br><br>
+     <sup><b>12</b></sup> So then each one of us will give an account concerning himself to God.<br><br>
+     <sup><b>13</b></sup> Therefore let us judge one another no longer, but rather judge this: not to put a stumbling block or cause of falling before your brother.<br><br>
+     <sup><b>14</b></sup> I know and am persuaded in the Lord Jesus that there is nothing unclean of itself, except to him who considers something to be unclean; to that man it is unclean.<br><br>
+     <sup><b>15</b></sup> For if because of food your brother is wounded, you no longer walk according to love. Do not destroy by your food that man for whom Christ died.<br><br>
+     <sup><b>16</b></sup> Therefore do not let your good be slandered;<br><br>
+     <sup><b>17</b></sup> For the kingdom of God is not eating and drinking, but righteousness and peace and joy in the Holy Spirit.<br><br>
+     <sup><b>18</b></sup> For he who serves Christ in this is well pleasing to God and approved by men.<br><br>
+     <sup><b>19</b></sup> So then let us pursue the things of peace and the things for building up one another.<br><br>
+     <sup><b>20</b></sup> Do not break down the work of God for the sake of food. All things indeed are clean, but it is evil for a man to eat while stumbling others.<br><br>
+     <sup><b>21</b></sup> It is good not to eat meat nor drink wine nor to do anything by which your brother stumbles.<br><br>
+     <sup><b>22</b></sup> The faith which you have, have to yourself before God. Blessed is he who does not judge himself in what he approves;<br><br>
+     <sup><b>23</b></sup> But he who doubts is condemned if he eats, because it is not out of faith; for all that is not out of faith is sin. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="romans-13"><a onclick="open_chapter('top', '45-romans.html')">Romans 13</a></h4>
+  <p><sup><b>1</b></sup> Let every person be subject to the authorities over him, for there is no authority except from God, and those which exist are ordained by God.<br><br>
+     <sup><b>2</b></sup> So then he who resists the authority opposes God’s ordination, and those who oppose will receive judgment to themselves.<br><br>
+     <sup><b>3</b></sup> For the rulers are not a terror to the good work, but to the evil. Do you want to have no fear of the authority? Do what is good, and you will have praise from him;<br><br>
+     <sup><b>4</b></sup> For he is a servant of God to you for good. But if you do what is evil, fear; he does not bear the sword in vain; for he is a servant of God, an avenger for wrath to him who practices evil.<br><br>
+     <sup><b>5</b></sup> Therefore it is necessary to be subject, not only because of wrath but also because of conscience.<br><br>
+     <sup><b>6</b></sup> For because of this you also pay taxes; for they are God’s officers, attending constantly to this very thing.<br><br>
+     <sup><b>7</b></sup> Render to all the things due: tax to whom tax is due, custom to whom custom is due, fear to whom fear is due, honor to whom honor is due.<br><br>
+     <sup><b>8</b></sup> Owe nothing to anyone except to love one another; for he who loves the other has fulfilled the law.<br><br>
+     <sup><b>9</b></sup> For, “You shall not commit adultery, you shall not murder, you shall not steal, you shall not covet,” and if there is any other commandment, it is summed up in this word, namely, “You shall love your neighbor as yourself.”<br><br>
+     <sup><b>10</b></sup> Love does not work evil to his neighbor; therefore love is the fulfillment of the law.<br><br>
+     <sup><b>11</b></sup> And this, knowing the time, that it is already the hour for you to be raised from sleep; for now is our salvation nearer than when we believed.<br><br>
+     <sup><b>12</b></sup> The night is far advanced, and the day has drawn near. Let us therefore cast off the works of darkness, and let us put on the weapons of light.<br><br>
+     <sup><b>13</b></sup> Let us walk becomingly as in the day; not in reveling and drunkenness, not in fornication and licentiousness, not in strife and jealousy.<br><br>
+     <sup><b>14</b></sup> But put on the Lord Jesus Christ, and make no provision for the flesh to fulfill its lusts. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

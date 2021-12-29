@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="romans-12"><a onclick="open_chapter('top', '45-romans.html')">Romans 12</a></h4>
+  <p><sup><b>1</b></sup> I exhort you therefore, brothers, through the compassions of God to present your bodies a living sacrifice, holy, well pleasing to God, which is your reasonable service.<br><br>
+     <sup><b>2</b></sup> And do not be fashioned according to this age, but be transformed by the renewing of the mind that you may prove what the will of God is, that which is good and well pleasing and perfect.<br><br>
+     <sup><b>3</b></sup> For I say, through the grace given to me, to everyone who is among you, not to think more highly of himself than he ought to think, but to think so as to be sober-minded, as God has apportioned to each a measure of faith.<br><br>
+     <sup><b>4</b></sup> For just as in one body we have many members, and all the members do not have the same function,<br><br>
+     <sup><b>5</b></sup> So we who are many are one Body in Christ, and individually members one of another.<br><br>
+     <sup><b>6</b></sup> And having gifts that differ according to the grace given to us, whether prophecy, let us prophesy according to the proportion of faith;<br><br>
+     <sup><b>7</b></sup> Or service, let us be faithful in that service; or he who teaches, in that teaching;<br><br>
+     <sup><b>8</b></sup> Or he who exhorts, in that exhortation; he who gives, in simplicity; he who leads, in diligence; he who shows mercy, in cheerfulness.<br><br>
+     <sup><b>9</b></sup> Let love be without hypocrisy. Abhor what is evil; cling to what is good.<br><br>
+     <sup><b>10</b></sup> Love one another warmly in brotherly love; take the lead in showing honor one to another.<br><br>
+     <sup><b>11</b></sup> Do not be slothful in zeal, but be burning in spirit, serving the Lord.<br><br>
+     <sup><b>12</b></sup> Rejoice in hope; endure in tribulation; persevere in prayer.<br><br>
+     <sup><b>13</b></sup> Contribute to the needs of the saints; pursue hospitality.<br><br>
+     <sup><b>14</b></sup> Bless those who persecute you; bless and do not curse.<br><br>
+     <sup><b>15</b></sup> Rejoice with those who rejoice; weep with those who weep.<br><br>
+     <sup><b>16</b></sup> Be of the same mind toward one another, not setting your mind on the high things but going along with the lowly; do not be wise in yourselves.<br><br>
+     <sup><b>17</b></sup> Repay no one evil for evil; take forethought for things honorable in the sight of all men.<br><br>
+     <sup><b>18</b></sup> If possible, as far as it depends on you, live in peace with all men.<br><br>
+     <sup><b>19</b></sup> Do not avenge yourselves, beloved, but give place to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”<br><br>
+     <sup><b>20</b></sup> But “if your enemy is hungry, feed him; if he is thirsty, give him a drink; for in doing this you will heap coals of fire upon his head.”<br><br>
+     <sup><b>21</b></sup> Do not be conquered by evil, but conquer evil with good. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('romans-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
