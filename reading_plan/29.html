@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-2"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 2</a></h4>
+  <p><sup><b>1</b></sup> But I determined this for myself, that I would not come again to you in sorrow.<br><br>
+     <sup><b>2</b></sup> For if I cause you sorrow, who then is the one who makes me glad, except the one who is made sorrowful by me?<br><br>
+     <sup><b>3</b></sup> And I wrote this very thing to you that when I come I would not have sorrow from those who ought to make me rejoice, having confidence in you all that my joy is the joy of you all.<br><br>
+     <sup><b>4</b></sup> For out of much affliction and anguish of heart I wrote to you through many tears, not that you would be made sorrowful but that you would know the love which I have more abundantly toward you.<br><br>
+     <sup><b>5</b></sup> But if anyone has caused sorrow, he has not caused me to sorrow, but in part (lest I lay too heavy a burden) all of you.<br><br>
+     <sup><b>6</b></sup> Sufficient for such a one is this punishment by the majority,<br><br>
+     <sup><b>7</b></sup> So that on the contrary you should rather forgive and comfort him, lest perhaps such a one be swallowed up with excessive sorrow.<br><br>
+     <sup><b>8</b></sup> Therefore I exhort you to confirm your love toward him.<br><br>
+     <sup><b>9</b></sup> For to this end also I wrote, that I might know your approvedness, whether you are obedient in all things.<br><br>
+     <sup><b>10</b></sup> But whom you forgive anything, I also forgive; for also what I have forgiven, if I have forgiven anything, it is for your sake in the person of Christ;<br><br>
+     <sup><b>11</b></sup> That we may not be taken advantage of by Satan, for we are not ignorant of his schemes.<br><br>
+     <sup><b>12</b></sup> Furthermore, when I came to Troas for the gospel of Christ and a door was open to me in the Lord,<br><br>
+     <sup><b>13</b></sup> I had no rest in my spirit, for I did not find Titus my brother; but taking leave of them, I went forth into Macedonia.<br><br>
+     <sup><b>14</b></sup> But thanks be to God, who always leads us in triumph in the Christ and manifests the savor of the knowledge of Him through us in every place.<br><br>
+     <sup><b>15</b></sup> For we are a fragrance of Christ to God in those who are being saved and in those who are perishing:<br><br>
+     <sup><b>16</b></sup> To some a savor out of death unto death, and to the others a savor out of life unto life. And who is sufficient for these things?<br><br>
+     <sup><b>17</b></sup> For we are not like the many, adulterating the word of God for profit; but as out of sincerity, but as out of God, before God we speak in Christ. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

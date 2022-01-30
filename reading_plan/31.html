@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-4"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 4</a></h4>
+  <p><sup><b>1</b></sup> Therefore having this ministry as we have been shown mercy, we do not lose heart;<br><br>
+     <sup><b>2</b></sup> But we have renounced the hidden things of shame, not walking in craftiness nor adulterating the word of God, but by the manifestation of the truth commending ourselves to every conscience of men before God.<br><br>
+     <sup><b>3</b></sup> And even if our gospel is veiled, it is veiled in those who are perishing,<br><br>
+     <sup><b>4</b></sup> In whom the god of this age has blinded the thoughts of the unbelievers that the illumination of the gospel of the glory of Christ, who is the image of God, might not shine on them.<br><br>
+     <sup><b>5</b></sup> For we do not preach ourselves but Christ Jesus as Lord, and ourselves as your slaves for Jesus’ sake.<br><br>
+     <sup><b>6</b></sup> Because the God who said, Out of darkness light shall shine, is the One who shined in our hearts to illuminate the knowledge of the glory of God in the face of Jesus Christ.<br><br>
+     <sup><b>7</b></sup> But we have this treasure in earthen vessels that the excellency of the power may be of God and not out of us.<br><br>
+     <sup><b>8</b></sup> We are pressed on every side but not constricted; unable to find a way out but not utterly without a way out;<br><br>
+     <sup><b>9</b></sup> Persecuted but not abandoned; cast down but not destroyed;<br><br>
+     <sup><b>10</b></sup> Always bearing about in the body the putting to death of Jesus that the life of Jesus also may be manifested in our body.<br><br>
+     <sup><b>11</b></sup> For we who are alive are always being delivered unto death for Jesus’ sake that the life of Jesus also may be manifested in our mortal flesh.<br><br>
+     <sup><b>12</b></sup> So then death operates in us, but life in you.<br><br>
+     <sup><b>13</b></sup> And having the same spirit of faith according to that which is written, “I believed, therefore I spoke,” we also believe, therefore we also speak,<br><br>
+     <sup><b>14</b></sup> Knowing that He who raised the Lord Jesus will raise us also with Jesus and will make us stand before Him with you.<br><br>
+     <sup><b>15</b></sup> For all things are for your sakes that the grace which has abounded through the greater number may cause the thanksgiving to abound to the glory of God.<br><br>
+     <sup><b>16</b></sup> Therefore we do not lose heart; but though our outer man is decaying, yet our inner man is being renewed day by day.<br><br>
+     <sup><b>17</b></sup> For our momentary lightness of affliction works out for us, more and more surpassingly, an eternal weight of glory,<br><br>
+     <sup><b>18</b></sup> Because we do not regard the things which are seen but the things which are not seen; for the things which are seen are temporary, but the things which are not seen are eternal. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

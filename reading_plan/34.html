@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-7"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 7</a></h4>
+  <p><sup><b>1</b></sup> Therefore since we have these promises, beloved, let us cleanse ourselves from all defilement of flesh and of spirit, perfecting holiness in the fear of God.<br><br>
+     <sup><b>2</b></sup> Make room for us; we have wronged no one, we have corrupted no one, we have taken advantage of no one.<br><br>
+     <sup><b>3</b></sup> I do not say this to condemn you, for I have said before that you are in our hearts for our dying together and our living together.<br><br>
+     <sup><b>4</b></sup> Great is my boldness toward you, great is my boasting on your behalf; I am filled with comfort, I overflow with joy in all our affliction.<br><br>
+     <sup><b>5</b></sup> For even when we came into Macedonia, our flesh had no rest, but we were afflicted in everything; without were fightings, within were fears.<br><br>
+     <sup><b>6</b></sup> But He who comforts those who are downcast, that is, God, comforted us by the coming of Titus;<br><br>
+     <sup><b>7</b></sup> And not only by his coming, but also by the comfort with which he was comforted because of you, declaring to us your longing, your lamentation, your zeal for me, so that I rejoiced the more.<br><br>
+     <sup><b>8</b></sup> For though I caused you sorrow by the letter, I do not regret it. Even if I did regret it (for I see that that letter, even if for an hour, caused you sorrow),<br><br>
+     <sup><b>9</b></sup> Now I rejoice, not that you were made sorrowful, but that you were made sorrowful to repentance; for you were made sorrowful according to God, that in nothing you might suffer loss from us.<br><br>
+     <sup><b>10</b></sup> For sorrow according to God works repentance unto salvation, which is without regret; but the sorrow of the world works out death.<br><br>
+     <sup><b>11</b></sup> For behold this very thing, your being made sorrowful according to God, what earnestness it has worked out in you, indeed what defense, indeed what indignation, indeed what fear, indeed what longing, indeed what zeal, indeed what punishment! In everything you have commended yourselves to be pure in the matter.<br><br>
+     <sup><b>12</b></sup> So then, though I wrote to you, it was not for the sake of him who did the wrong, nor for the sake of him who was wronged, but for the sake of manifesting to you before God your earnestness for us.<br><br>
+     <sup><b>13</b></sup> Because of this we have been comforted.        And in addition to our comfort, we rejoiced more abundantly over the joy of Titus, because his spirit has been refreshed by all of you.<br><br>
+     <sup><b>14</b></sup> For if in anything I boasted to him on your behalf, I have not been put to shame; on the contrary, as we spoke all things in truth to you, so also our boasting before Titus turned out to be the truth.<br><br>
+     <sup><b>15</b></sup> And his affections are abundantly toward you, he remembering the obedience of you all, how you received him with fear and trembling.<br><br>
+     <sup><b>16</b></sup> I rejoice that in everything I have boldness because of you. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1corinthians-16"><a onclick="open_chapter('top', '46-1corinthians.html')">1 Corinthians 16</a></h4>
+  <p><sup><b>1</b></sup> Now concerning the collection for the saints, just as I directed the churches of Galatia, so you also do.<br><br>
+     <sup><b>2</b></sup> On the first day of the week each one of you should lay aside in store to himself whatever he may have been prospered, that no collections be made when I come.<br><br>
+     <sup><b>3</b></sup> And when I arrive, whomever you approve, I will send them with letters to carry your gift to Jerusalem;<br><br>
+     <sup><b>4</b></sup> And if it is fitting for me also to go, they will go with me.<br><br>
+     <sup><b>5</b></sup> Now I will come to you when I pass through Macedonia, for I will pass through Macedonia.<br><br>
+     <sup><b>6</b></sup> And perhaps I will stay with you, or even spend the winter, that you may send me forward wherever I may go.<br><br>
+     <sup><b>7</b></sup> For I do not wish to see you now just in passing, for I am hoping to remain with you for some time, if the Lord permits.<br><br>
+     <sup><b>8</b></sup> But I will remain in Ephesus until Pentecost,<br><br>
+     <sup><b>9</b></sup> For a door is opened to me, great and efficacious, and there are many opposers.<br><br>
+     <sup><b>10</b></sup> Now if Timothy comes, see that he is with you without fear; for he is working the work of the Lord, even as I am.<br><br>
+     <sup><b>11</b></sup> Let no one therefore despise him, but send him forward in peace that he may come to me; for I am awaiting him with the brothers.<br><br>
+     <sup><b>12</b></sup> And concerning our brother Apollos, I urged him many times to come to you with the brothers; yet it was not at all his desire to come now, but he will come when he has opportunity.<br><br>
+     <sup><b>13</b></sup> Watch, stand firm in the faith, be full-grown men, be strong.<br><br>
+     <sup><b>14</b></sup> Let all your matters be done in love.<br><br>
+     <sup><b>15</b></sup> Now I exhort you, brothers: You know the household of Stephanas, that it is the firstfruits of Achaia, and they have set themselves to minister to the saints;<br><br>
+     <sup><b>16</b></sup> You also be subject to such ones, and to everyone co-working and laboring.<br><br>
+     <sup><b>17</b></sup> Now I rejoice at the coming of Stephanas and Fortunatus and Achaicus, because these have filled up the lack caused by your absence;<br><br>
+     <sup><b>18</b></sup> For they refreshed my spirit and yours. Acknowledge therefore such ones.<br><br>
+     <sup><b>19</b></sup> The churches of Asia greet you. Aquila and Prisca greet you much in the Lord, with the church, which is in their house.<br><br>
+     <sup><b>20</b></sup> All the brothers greet you. Greet one another with a holy kiss.<br><br>
+     <sup><b>21</b></sup> The greeting in my own hand — Paul.<br><br>
+     <sup><b>22</b></sup> If anyone does not love the Lord, let him be accursed! The Lord comes!<br><br>
+     <sup><b>23</b></sup> The grace of the Lord Jesus be with you.<br><br>
+     <sup><b>24</b></sup> My love in Christ Jesus be with you all. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

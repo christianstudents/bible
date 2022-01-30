@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-10"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 10</a></h4>
+  <p><sup><b>1</b></sup> But I myself, Paul, entreat you through the meekness and gentleness of Christ, who (as you say) in person am base among you, but while absent am bold toward you,<br><br>
+     <sup><b>2</b></sup> I beseech you that when present I would not have to be bold in the confidence with which I count myself, to dare do to some who count us as ones who are walking according to flesh.<br><br>
+     <sup><b>3</b></sup> For though we walk in flesh, we do not war according to flesh;<br><br>
+     <sup><b>4</b></sup> For the weapons of our warfare are not fleshly but powerful before God for the overthrowing of strongholds,<br><br>
+     <sup><b>5</b></sup> As we overthrow reasonings and every high thing rising up against the knowledge of God, and take captive every thought unto the obedience of Christ.<br><br>
+     <sup><b>6</b></sup> And we are ready to punish all disobedience when your obedience is fulfilled.<br><br>
+     <sup><b>7</b></sup> You look at things according to their appearance. If someone has confidence in himself to be of Christ, let him take account of this again concerning himself, that even as he is of Christ, so also are we.<br><br>
+     <sup><b>8</b></sup> For even if I should boast somewhat more abundantly concerning our authority, which the Lord has given for building you up and not for overthrowing you, I will not be put to shame.<br><br>
+     <sup><b>9</b></sup> I say this so as not to seem as if I am terrifying you through my letters,<br><br>
+     <sup><b>10</b></sup> Because while his letters, someone says, are weighty and strong, his bodily presence is weak and his speech contemptible.<br><br>
+     <sup><b>11</b></sup> Let such a one take account of this, that such as we are in word by letters when absent, such also we are in deed when present.<br><br>
+     <sup><b>12</b></sup> For we do not dare to class or compare ourselves with any of those who commend themselves; but they, measuring themselves by themselves and comparing themselves with themselves, are without understanding.<br><br>
+     <sup><b>13</b></sup> But we will not boast beyond our measure but according to the measure of the rule which the God of measure has apportioned to us, to reach even as far as you.<br><br>
+     <sup><b>14</b></sup> For we are not extending ourselves beyond our bounds, as if we did not reach you, for we were the first to come even as far as unto you in the gospel of Christ.<br><br>
+     <sup><b>15</b></sup> We are not boasting beyond our measure in others’ labors, but have the hope, as your faith is increasing, to be magnified in you according to our rule unto abundance,<br><br>
+     <sup><b>16</b></sup> So that we may announce the gospel unto those parts beyond you, not so that we may boast in another man’s rule in things already prepared.<br><br>
+     <sup><b>17</b></sup> But he who boasts, let him boast in the Lord;<br><br>
+     <sup><b>18</b></sup> For it is not the one who commends himself who is approved, but the one whom the Lord commends. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

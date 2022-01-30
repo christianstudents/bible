@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-9"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 9</a></h4>
+  <p><sup><b>1</b></sup> For concerning the ministry to the saints, it is superfluous for me to write to you;<br><br>
+     <sup><b>2</b></sup> For I know your eagerness, of which I boast on your behalf to the Macedonians, that Achaia has been prepared since last year; and your zeal has stirred up the greater number of them.<br><br>
+     <sup><b>3</b></sup> But I sent the brothers that our boasting on your behalf might not be made void in this respect, that, as I said, you might be prepared;<br><br>
+     <sup><b>4</b></sup> Lest, if the Macedonians come with me and find you unprepared, we, not to mention you, be put to shame in this confidence.<br><br>
+     <sup><b>5</b></sup> Therefore I thought it necessary to entreat the brothers to go before to you and make ready beforehand your previously promised blessing, that thus this might be ready as a blessing and not as a matter of covetousness.<br><br>
+     <sup><b>6</b></sup> But take note of this: He who sows sparingly shall also sparingly reap; and he who sows with blessings shall also with blessings reap;<br><br>
+     <sup><b>7</b></sup> Each one as he has purposed in his heart, not out of sorrow or out of necessity, for God loves a cheerful giver.<br><br>
+     <sup><b>8</b></sup> And God is able to make all grace abound unto you, that, in everything always having all sufficiency, you may abound unto every good work;<br><br>
+     <sup><b>9</b></sup> Even as it is written, “He has scattered abroad; he has given to the poor; his righteousness abides forever.”<br><br>
+     <sup><b>10</b></sup> Now He who bountifully supplies seed to the sower and bread for food will supply and multiply your seed and cause the fruits of your righteousness to increase.<br><br>
+     <sup><b>11</b></sup> You in everything are being enriched unto all liberality, which works out through us thanksgiving to God,<br><br>
+     <sup><b>12</b></sup> Because the ministry of this service is not only filling up the lack of the saints, but is also abounding through many thanksgivings to God.<br><br>
+     <sup><b>13</b></sup> They, through the approving of this ministry, are glorifying God based upon the subjection unto the gospel of Christ that issues from your confession, and upon the liberality of the fellowship to them and to all;<br><br>
+     <sup><b>14</b></sup> While in petition on your behalf they also long after you on account of the surpassing grace of God upon you.<br><br>
+     <sup><b>15</b></sup> Thanks be to God for His indescribable gift! <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

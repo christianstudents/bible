@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1corinthians-12"><a onclick="open_chapter('top', '46-1corinthians.html')">1 Corinthians 12</a></h4>
+  <p><sup><b>1</b></sup> Now concerning spiritual gifts, brothers, I do not want you to be ignorant.<br><br>
+     <sup><b>2</b></sup> You know that when you were Gentiles, you were always being led away to dumb idols, whenever and however you were led.<br><br>
+     <sup><b>3</b></sup> Therefore I make known to you that no one speaking in the Spirit of God says, Jesus is accursed; and no one can say, Jesus is Lord! except in the Holy Spirit.<br><br>
+     <sup><b>4</b></sup> But there are distinctions of gifts, but the same Spirit;<br><br>
+     <sup><b>5</b></sup> And there are distinctions of ministries, yet the same Lord;<br><br>
+     <sup><b>6</b></sup> And there are distinctions of operations, but the same God, who operates all things in all.<br><br>
+     <sup><b>7</b></sup> But to each one is given the manifestation of the Spirit for what is profitable.<br><br>
+     <sup><b>8</b></sup> For to one through the Spirit a word of wisdom is given, and to another a word of knowledge, according to the same Spirit;<br><br>
+     <sup><b>9</b></sup> To a different one faith in the same Spirit, and to another gifts of healing in the one Spirit,<br><br>
+     <sup><b>10</b></sup> And to another operations of works of power, and to another prophecy, and to another discerning of spirits; to a different one various kinds of tongues, and to another interpretation of tongues.<br><br>
+     <sup><b>11</b></sup> But the one and the same Spirit operates all these things, distributing to each one respectively even as He purposes.<br><br>
+     <sup><b>12</b></sup> For even as the body is one and has many members, yet all the members of the body, being many, are one body, so also is the Christ.<br><br>
+     <sup><b>13</b></sup> For also in one Spirit we were all baptized into one Body, whether Jews or Greeks, whether slaves or free, and were all given to drink one Spirit.<br><br>
+     <sup><b>14</b></sup> For the body is not one member but many.<br><br>
+     <sup><b>15</b></sup> If the foot should say, Because I am not a hand, I am not of the body, it is not that because of this it is not of the body.<br><br>
+     <sup><b>16</b></sup> And if the ear should say, Because I am not an eye, I am not of the body, it is not that because of this it is not of the body.<br><br>
+     <sup><b>17</b></sup> If the whole body were an eye, where would the hearing be? If the whole were the hearing, where would the smelling be?<br><br>
+     <sup><b>18</b></sup> But now God has placed the members, each one of them, in the body, even as He willed.<br><br>
+     <sup><b>19</b></sup> And if all were one member, where would the body be?<br><br>
+     <sup><b>20</b></sup> But now the members are many, but the body one.<br><br>
+     <sup><b>21</b></sup> And the eye cannot say to the hand, I have no need of you; nor again the head to the feet, I have no need of you.<br><br>
+     <sup><b>22</b></sup> But much rather the members of the body which seem to be weaker are necessary.<br><br>
+     <sup><b>23</b></sup> And those members of the body which we consider to be less honorable, these we clothe with more abundant honor; and our uncomely members come to have more abundant comeliness,<br><br>
+     <sup><b>24</b></sup> But our comely members have no need. But God has blended the body together, giving more abundant honor to the member that lacked,<br><br>
+     <sup><b>25</b></sup> That there would be no division in the body, but that the members would have the same care for one another.<br><br>
+     <sup><b>26</b></sup> And whether one member suffers, all the members suffer with it; or one member is glorified, all the members rejoice with it.<br><br>
+     <sup><b>27</b></sup> Now you are the Body of Christ, and members individually.<br><br>
+     <sup><b>28</b></sup> And God has placed some in the church: first apostles, second prophets, third teachers; then works of power, then gifts of healing, helps, administrations, various kinds of tongues.<br><br>
+     <sup><b>29</b></sup> Are all apostles? Are all prophets? Are all teachers? Do all have works of power?<br><br>
+     <sup><b>30</b></sup> Do all have gifts of healing? Do all speak in tongues? Do all interpret tongues?<br><br>
+     <sup><b>31</b></sup> But earnestly desire the greater gifts. And moreover I show to you a most excellent way. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

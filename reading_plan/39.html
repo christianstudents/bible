@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-12"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 12</a></h4>
+  <p><sup><b>1</b></sup> To boast is necessary, though indeed not expedient; yet I will come to visions and revelations of the Lord.<br><br>
+     <sup><b>2</b></sup> I know a man in Christ, fourteen years ago (whether in the body I do not know, or outside the body I do not know; God knows) such a one was caught away to the third heaven.<br><br>
+     <sup><b>3</b></sup> And I know such a man (whether in the body or outside the body, I do not know; God knows),<br><br>
+     <sup><b>4</b></sup> That he was caught away into Paradise and heard unspeakable words, which it is not allowed for a man to speak.<br><br>
+     <sup><b>5</b></sup> On behalf of such a one I will boast, but on behalf of myself I will not boast, except in my weaknesses.<br><br>
+     <sup><b>6</b></sup> For if I desire to boast, I will not be foolish, for I will speak the truth; but I refrain lest anyone account of me something above what he sees me to be or hears from me.<br><br>
+     <sup><b>7</b></sup> And because of the transcendence of the revelations, in order that I might not be exceedingly lifted up, there was given to me a thorn in the flesh, a messenger of Satan, that he might buffet me, in order that I might not be exceedingly lifted up.<br><br>
+     <sup><b>8</b></sup> Concerning this I entreated the Lord three times that it might depart from me.<br><br>
+     <sup><b>9</b></sup> And He has said to me, My grace is sufficient for you, for My power is perfected in weakness. Most gladly therefore I will rather boast in my weaknesses that the power of Christ might tabernacle over me.<br><br>
+     <sup><b>10</b></sup> Therefore I am well pleased in weaknesses, in insults, in necessities, in persecutions and distresses, on behalf of Christ; for when I am weak, then I am powerful.<br><br>
+     <sup><b>11</b></sup> I have become foolish; you yourselves have compelled me. For it is I who should have been commended by you; for in nothing am I inferior to the super-apostles, even though I am nothing.<br><br>
+     <sup><b>12</b></sup> Indeed the signs of an apostle were wrought among you in all endurance by signs and wonders and works of power.<br><br>
+     <sup><b>13</b></sup> For what is there in which you were treated in a manner inferior to the rest of the churches, except that I myself was not a burden to you? Graciously forgive me this injustice!<br><br>
+     <sup><b>14</b></sup> Behold, this third time I am ready to come to you, and I will not be a burden; for I do not seek what is yours but you. For the children ought not to store up for the parents, but the parents for the children.<br><br>
+     <sup><b>15</b></sup> But I, I will most gladly spend and be utterly spent on behalf of your souls. If I love you more abundantly, am I loved less?<br><br>
+     <sup><b>16</b></sup> But let it be so! I did not burden you; but, as some of you say, being crafty, I took you by guile.<br><br>
+     <sup><b>17</b></sup> Did I take advantage of you through anyone whom I have sent to you?<br><br>
+     <sup><b>18</b></sup> I entreated Titus and sent with him the brother. Titus did not take advantage of you, did he? Did we not walk in the same spirit? In the same steps?<br><br>
+     <sup><b>19</b></sup> All this time you have been thinking that we are defending ourselves to you. Before God in Christ we speak; but all things, beloved, are for your building up.<br><br>
+     <sup><b>20</b></sup> For I fear that perhaps when I come, I may find you not such as I wish, and I may be found by you not such as you wish; that perhaps there may be strife, jealousy, outbursts of anger, selfish ambitions, slanders, whisperings, demonstrations of being puffed up, tumults;<br><br>
+     <sup><b>21</b></sup> That when I come again my God may humble me before you and I may mourn over many who have sinned before and who have not repented of the uncleanness and fornication and licentiousness which they have practiced. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-6"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 6</a></h4>
+  <p><sup><b>1</b></sup> And working together with Him, we also entreat you not to receive the grace of God in vain;<br><br>
+     <sup><b>2</b></sup> For He says, “In an acceptable time I listened to you, and in the day of salvation I helped you.” Behold, now is the well-acceptable time; behold, now is the day of salvation.<br><br>
+     <sup><b>3</b></sup> We give no occasion of stumbling in anything that the ministry may not be faulted,<br><br>
+     <sup><b>4</b></sup> But in everything we commend ourselves as ministers of God, in much endurance, in afflictions, in necessities, in distresses,<br><br>
+     <sup><b>5</b></sup> In stripes, in imprisonments, in tumults, in labors, in watchings, in fastings;<br><br>
+     <sup><b>6</b></sup> In pureness, in knowledge, in long-suffering, in kindness, in a holy spirit, in unfeigned love,<br><br>
+     <sup><b>7</b></sup> In the word of truth, in the power of God; through the weapons of righteousness on the right and on the left,<br><br>
+     <sup><b>8</b></sup> Through glory and dishonor, through evil report and good report; as deceivers and yet true;<br><br>
+     <sup><b>9</b></sup> As unknown and yet well known; as dying and yet behold we live; as being disciplined and yet not being put to death;<br><br>
+     <sup><b>10</b></sup> As made sorrowful yet always rejoicing; as poor yet enriching many; as having nothing and yet possessing all things.<br><br>
+     <sup><b>11</b></sup> Our mouth is opened to you, Corinthians; our heart is enlarged.<br><br>
+     <sup><b>12</b></sup> You are not constricted in us, but you are constricted in your inward parts.<br><br>
+     <sup><b>13</b></sup> But for a recompense in kind, I speak as to children, you also be enlarged.<br><br>
+     <sup><b>14</b></sup> Do not become dissimilarly yoked with unbelievers. For what partnership do righteousness and lawlessness have? Or what fellowship does light have with darkness?<br><br>
+     <sup><b>15</b></sup> And what concord does Christ have with Belial? Or what part does a believer have with an unbeliever?<br><br>
+     <sup><b>16</b></sup> And what agreement does the temple of God have with idols? For we are the temple of the living God, even as God said, “I will dwell among them and walk among them; and I will be their God, and they will be My people.”<br><br>
+     <sup><b>17</b></sup> Therefore “come out from their midst and be separated, says the Lord, and do not touch what is unclean; and I will welcome you”;<br><br>
+     <sup><b>18</b></sup> “And I will be a Father to you, and you will be sons and daughters to Me, says the Lord Almighty.” <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

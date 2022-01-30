@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Galatians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="galatians-3"><a onclick="open_chapter('top', '48-galatians.html')">Galatians 3</a></h4>
+  <p><sup><b>1</b></sup> O foolish Galatians, who has bewitched you, before whose eyes Jesus Christ was openly portrayed crucified?<br><br>
+     <sup><b>2</b></sup> This only I wish to learn from you, Did you receive the Spirit out of the works of law or out of the hearing of faith?<br><br>
+     <sup><b>3</b></sup> Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh?<br><br>
+     <sup><b>4</b></sup> Have you suffered so many things in vain, if indeed it was in vain?<br><br>
+     <sup><b>5</b></sup> He therefore who bountifully supplies to you the Spirit and does works of power among you, does He do it out of the works of law or out of the hearing of faith?<br><br>
+     <sup><b>6</b></sup> Even as “Abraham believed God, and it was accounted to him as righteousness.”<br><br>
+     <sup><b>7</b></sup> Know then that they who are of faith, these are sons of Abraham.<br><br>
+     <sup><b>8</b></sup> And the Scripture, foreseeing that God would justify the Gentiles out of faith, announced the gospel beforehand to Abraham: “In you shall all the nations be blessed.”<br><br>
+     <sup><b>9</b></sup> So then they who are of faith are blessed with believing Abraham.<br><br>
+     <sup><b>10</b></sup> For as many as are of the works of law are under a curse; for it is written, “Cursed is everyone who does not continue in all the things written in the book of the law to do them.”<br><br>
+     <sup><b>11</b></sup> And that by law no one is justified before God is evident because, “The righteous one shall have life and live by faith”;<br><br>
+     <sup><b>12</b></sup> But the law is not of faith, yet, “He who does them shall live because of them.”<br><br>
+     <sup><b>13</b></sup> Christ has redeemed us out of the curse of the law, having become a curse on our behalf; because it is written, “Cursed is everyone hanging on a tree”;<br><br>
+     <sup><b>14</b></sup> In order that the blessing of Abraham might come to the Gentiles in Christ Jesus, that we might receive the promise of the Spirit through faith.<br><br>
+     <sup><b>15</b></sup> Brothers, I speak according to man, though it is a man’s covenant, yet when it has been ratified, no one nullifies it or makes additions to it.<br><br>
+     <sup><b>16</b></sup> But to Abraham were the promises spoken and to his seed. He does not say, And to the seeds, as concerning many, but as concerning one: “And to your seed,” who is Christ.<br><br>
+     <sup><b>17</b></sup> And I say this: A covenant previously ratified by God, the law, having come four hundred and thirty years after, does not annul so as to make the promise of none effect.<br><br>
+     <sup><b>18</b></sup> For if the inheritance is of law, it is no longer of promise; but to Abraham God has graciously given it through promise.<br><br>
+     <sup><b>19</b></sup> Why then the law? It was added because of the transgressions until the seed should come to whom the promise was made, it being ordained through angels in the hand of a mediator.<br><br>
+     <sup><b>20</b></sup> But a mediator is not a mediator for one, but God is one.<br><br>
+     <sup><b>21</b></sup> Is then the law against the promises of God? Absolutely not! For if a law had been given which was able to give life, righteousness would have indeed been of law.<br><br>
+     <sup><b>22</b></sup> But the Scripture has shut up all under sin in order that the promise out of faith in Jesus Christ might be given to those who believe.<br><br>
+     <sup><b>23</b></sup> But before faith came we were guarded under law, being shut up unto the faith which was to be revealed.<br><br>
+     <sup><b>24</b></sup> So then the law has become our child-conductor unto Christ that we might be justified out of faith.<br><br>
+     <sup><b>25</b></sup> But since faith has come, we are no longer under a child-conductor.<br><br>
+     <sup><b>26</b></sup> For you are all sons of God through faith in Christ Jesus.<br><br>
+     <sup><b>27</b></sup> For as many of you as were baptized into Christ have put on Christ.<br><br>
+     <sup><b>28</b></sup> There cannot be Jew nor Greek, there cannot be slave nor free man, there cannot be male and female; for you are all one in Christ Jesus.<br><br>
+     <sup><b>29</b></sup> And if you are of Christ, then you are Abraham’s seed, heirs according to promise. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('galatians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

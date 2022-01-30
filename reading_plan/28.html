@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="2corinthians-1"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 1</a></h4>
+  <p><sup><b>1</b></sup> Paul, an apostle of Christ Jesus through the will of God, and Timothy the brother, to the church of God which is in Corinth, with all the saints who are in the whole of Achaia:<br><br>
+     <sup><b>2</b></sup> Grace to you and peace from God our Father and the Lord Jesus Christ.<br><br>
+     <sup><b>3</b></sup> Blessed be the God and Father of our Lord Jesus Christ, the Father of compassions and God of all comfort,<br><br>
+     <sup><b>4</b></sup> Who comforts us in all our affliction that we may be able to comfort those who are in every affliction through the comforting with which we ourselves are comforted by God.<br><br>
+     <sup><b>5</b></sup> For even as the sufferings of the Christ abound unto us, so through the Christ our comfort also abounds.<br><br>
+     <sup><b>6</b></sup> But whether we are afflicted, it is for your comforting and salvation; or whether we are comforted, it is for your comforting, which operates in the endurance of the same sufferings which we also suffer.<br><br>
+     <sup><b>7</b></sup> And our hope for you is firm, knowing that as you are partakers of the sufferings, so also you are of the comfort.<br><br>
+     <sup><b>8</b></sup> For we do not want you to be ignorant, brothers, of our affliction which befell us in Asia, that we were excessively burdened, beyond our power, so that we despaired even of living.<br><br>
+     <sup><b>9</b></sup> Indeed we ourselves had the response of death in ourselves, that we should not base our confidence on ourselves but on God, who raises the dead;<br><br>
+     <sup><b>10</b></sup> Who has delivered us out of so great a death, and will deliver us; in whom we have hoped that He will also yet deliver us,<br><br>
+     <sup><b>11</b></sup> If you also help in this by petition on our behalf, that for the gift to us through many, thanks may be given by many persons on our behalf.<br><br>
+     <sup><b>12</b></sup> For our boasting is this, the testimony of our conscience, that in singleness and sincerity of God, not in fleshly wisdom but in the grace of God, we have conducted ourselves in the world, and more abundantly toward you.<br><br>
+     <sup><b>13</b></sup> For no other things do we write to you than what you read or even know; and I hope that you will know unto the end,<br><br>
+     <sup><b>14</b></sup> Even as also you know us in part, that we are your boast, just as you also are ours in the day of our Lord Jesus.<br><br>
+     <sup><b>15</b></sup> And in this confidence I intended to come to you previously that you might have double grace,<br><br>
+     <sup><b>16</b></sup> And through you to pass through into Macedonia, and again from Macedonia to come to you and be sent forward by you into Judea.<br><br>
+     <sup><b>17</b></sup> This therefore intending, did I then use fickleness? Or the things which I purpose, do I purpose according to the flesh, so that with me there should be Yes, yes and No, no?<br><br>
+     <sup><b>18</b></sup> But as God is faithful, our word toward you is not yes and no.<br><br>
+     <sup><b>19</b></sup> For the Son of God, Jesus Christ, who was preached among you through us, through me and Silvanus and Timothy, did not become yes and no, but our word has become yes in Him.<br><br>
+     <sup><b>20</b></sup> For as many promises of God as there are, in Him is the Yes; therefore also through Him is the Amen to God, for glory through us to God.<br><br>
+     <sup><b>21</b></sup> But the One who firmly attaches us with you unto Christ and has anointed us is God,<br><br>
+     <sup><b>22</b></sup> He who has also sealed us and given the Spirit in our hearts as a pledge.<br><br>
+     <sup><b>23</b></sup> But I call on God as a witness against my soul that to spare you I have not yet come to Corinth.<br><br>
+     <sup><b>24</b></sup> Not that we lord it over your faith, but we are fellow workers with you for your joy; for by faith you stand. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

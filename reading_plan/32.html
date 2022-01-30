@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-5"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 5</a></h4>
+  <p><sup><b>1</b></sup> For we know that if our earthly tabernacle dwelling is taken down, we have a building from God, a dwelling not made with hands, eternal, in the heavens.<br><br>
+     <sup><b>2</b></sup> For also in this we groan, longing to be clothed upon with our dwelling place from heaven,<br><br>
+     <sup><b>3</b></sup> If indeed, being clothed, we will not be found naked.<br><br>
+     <sup><b>4</b></sup> For also, we who are in this tabernacle groan, being burdened, in that we do not desire to be unclothed, but clothed upon, that what is mortal may be swallowed up by life.<br><br>
+     <sup><b>5</b></sup> Now He who has wrought us for this very thing is God, who has given to us the Spirit as a pledge.<br><br>
+     <sup><b>6</b></sup> Therefore being always of good courage and knowing that while we are at home in the body, we are abroad from the Lord<br><br>
+     <sup><b>7</b></sup> (For we walk by faith, not by appearance) —<br><br>
+     <sup><b>8</b></sup> We are of good courage then and are well pleased rather to be abroad from the body and at home with the Lord.<br><br>
+     <sup><b>9</b></sup> Therefore also we are determined, whether at home or abroad, to gain the honor of being well pleasing to Him.<br><br>
+     <sup><b>10</b></sup> For we must all be manifested before the judgment seat of Christ, that each one may receive the things done through the body according to what he has practiced, whether good or bad.<br><br>
+     <sup><b>11</b></sup> Knowing therefore the fear of the Lord, we persuade men, but we are made manifest to God; yet I hope that we are made manifest also in your consciences.<br><br>
+     <sup><b>12</b></sup> We are not again commending ourselves to you, but so speak in order to give you an opportunity to boast on our behalf, that you may have an answer for those who are boasting in outward appearance and not in heart.<br><br>
+     <sup><b>13</b></sup> For whether we were beside ourselves, it was to God; or whether we are sober-minded, it is for you.<br><br>
+     <sup><b>14</b></sup> For the love of Christ constrains us because we have judged this, that One died for all, therefore all died;<br><br>
+     <sup><b>15</b></sup> And He died for all that those who live may no longer live to themselves but to Him who died for them and has been raised.<br><br>
+     <sup><b>16</b></sup> So then we, from now on, know no one according to the flesh; even though we have known Christ according to the flesh, yet now we know Him so no longer.<br><br>
+     <sup><b>17</b></sup> So then if anyone is in Christ, he is a new creation. The old things have passed away; behold, they have become new.<br><br>
+     <sup><b>18</b></sup> But all things are out from God, who has reconciled us to Himself through Christ and has given to us the ministry of reconciliation;<br><br>
+     <sup><b>19</b></sup> Namely, that God in Christ was reconciling the world to Himself, not accounting their offenses to them, and has put in us the word of reconciliation.<br><br>
+     <sup><b>20</b></sup> On behalf of Christ then we are ambassadors, as God entreats you through us; we beseech you on behalf of Christ, Be reconciled to God.<br><br>
+     <sup><b>21</b></sup> Him who did not know sin He made sin on our behalf that we might become the righteousness of God in Him. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

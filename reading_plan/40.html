@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-13"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 13</a></h4>
+  <p><sup><b>1</b></sup> This third time I am coming to you; at the mouth of two or three witnesses shall every word be established.<br><br>
+     <sup><b>2</b></sup> I have previously said and I say beforehand, when I was present the second time and being absent now, to those who have sinned before and to all the rest, that if I come again, I will not spare,<br><br>
+     <sup><b>3</b></sup> Since you seek a proof of the Christ who is speaking in me, who is not weak unto you but is powerful in you.<br><br>
+     <sup><b>4</b></sup> For indeed He was crucified out of weakness, but He lives by the power of God. For indeed we are weak in Him, but we will live together with Him by the power of God directed toward you.<br><br>
+     <sup><b>5</b></sup> Test yourselves whether you are in the faith; prove yourselves. Or do you not realize about yourselves that Jesus Christ is in you, unless you are disapproved?<br><br>
+     <sup><b>6</b></sup> But I hope that you will know that we are not disapproved.<br><br>
+     <sup><b>7</b></sup> Now we pray to God that you do nothing wrong, not that we may appear approved, but that you yourselves may do what is good and we may be as if disapproved.<br><br>
+     <sup><b>8</b></sup> For we are not able to do anything against the truth but rather for the truth.<br><br>
+     <sup><b>9</b></sup> For we rejoice whenever we are weak and you are powerful; this also we pray for, your perfecting.<br><br>
+     <sup><b>10</b></sup> Therefore I write these things while being absent in order that when present I would not have to use severity, according to the authority which the Lord has given me for building up and not for overthrowing.<br><br>
+     <sup><b>11</b></sup> Finally, brothers, rejoice, be perfected, be comforted, think the same thing, be at peace; and the God of love and peace will be with you.<br><br>
+     <sup><b>12</b></sup> Greet one another with a holy kiss.<br><br>
+     <sup><b>13</b></sup> All the saints greet you.<br><br>
+     <sup><b>14</b></sup> The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

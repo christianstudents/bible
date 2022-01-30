@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2corinthians-8"><a onclick="open_chapter('top', '47-2corinthians.html')">2 Corinthians 8</a></h4>
+  <p><sup><b>1</b></sup> Furthermore we make known to you, brothers, the grace of God which has been given in the churches of Macedonia,<br><br>
+     <sup><b>2</b></sup> That in much proving of affliction the abundance of their joy and the depth of their poverty abounded unto the riches of their liberality;<br><br>
+     <sup><b>3</b></sup> That according to their power, I testify, and beyond their power, of their own accord,<br><br>
+     <sup><b>4</b></sup> With much entreaty they besought of us the grace and the fellowship of the ministry to the saints;<br><br>
+     <sup><b>5</b></sup> And this, not as we had hoped, but they gave themselves first to the Lord, and to us through the will of God.<br><br>
+     <sup><b>6</b></sup> So we entreated Titus that, even as he began before, so also he would complete for you this grace as well.<br><br>
+     <sup><b>7</b></sup> But just as you abound in everything, in faith and in word and in knowledge and in all earnestness and in the love in you from us, abound in this grace also.<br><br>
+     <sup><b>8</b></sup> I am not speaking by way of command, but through the earnestness of others, proving also the genuineness of your love.<br><br>
+     <sup><b>9</b></sup> For you know the grace of our Lord Jesus Christ, that though He was rich, for your sakes He became poor in order that you, because of His poverty, might become rich.<br><br>
+     <sup><b>10</b></sup> And I give my opinion in this matter, for this is profitable for you who were the first to begin a year ago not only to do this but even to intend to do this.<br><br>
+     <sup><b>11</b></sup> But now complete also the doing, so that as there was the eagerness in intending, so also there would be the completing out of what you have.<br><br>
+     <sup><b>12</b></sup> For if the eagerness is there, it is acceptable according to whatever one has, not according to what he does not have.<br><br>
+     <sup><b>13</b></sup> For it is not that to others there would be relief, yet to you affliction,<br><br>
+     <sup><b>14</b></sup> But it is out of equality; at the present time your abundance for their lack that their abundance also may be for your lack, so that there may be equality;<br><br>
+     <sup><b>15</b></sup> As it is written, “He who gathered much had no excess, and he who gathered little had no lack.”<br><br>
+     <sup><b>16</b></sup> But thanks be to God who puts the same earnestness on your behalf in the heart of Titus,<br><br>
+     <sup><b>17</b></sup> Because he not only received the entreaty, but being more earnest, he also went forth of his own accord to you.<br><br>
+     <sup><b>18</b></sup> And we sent together with him the brother whose praise in the gospel is throughout all the churches,<br><br>
+     <sup><b>19</b></sup> And not only this, but who has also been selected by the churches as our fellow traveler in this grace which is being ministered by us, to the glory of the Lord Himself and to demonstrate our eagerness;<br><br>
+     <sup><b>20</b></sup> Avoiding this, that anyone should find fault with us in this abundance which is being ministered by us.<br><br>
+     <sup><b>21</b></sup> For we exercise foresight for what is honorable not only in the sight of the Lord but also in the sight of men.<br><br>
+     <sup><b>22</b></sup> And we sent with them our brother, whom we have proved to be diligent in many things many times, yet now much more diligent because of the great confidence he has toward you.<br><br>
+     <sup><b>23</b></sup> Whether concerning Titus, he is my partner and fellow worker for you; or our brothers, they are apostles of the churches, they are Christ’s glory.<br><br>
+     <sup><b>24</b></sup> Show therefore to them, in the face of the churches, the proof of your love and of our boasting on your behalf. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2corinthians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

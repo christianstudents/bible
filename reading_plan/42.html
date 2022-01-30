@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Galatians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="galatians-2"><a onclick="open_chapter('top', '48-galatians.html')">Galatians 2</a></h4>
+  <p><sup><b>1</b></sup> Then after a period of fourteen years I went up again to Jerusalem with Barnabas, taking Titus with me also.<br><br>
+     <sup><b>2</b></sup> And I went up according to revelation, and I laid before them the gospel which I proclaim among the Gentiles, but privately to those who were of repute, lest perhaps I should be running, or had run, in vain.<br><br>
+     <sup><b>3</b></sup> But not even Titus, who was with me, though he is a Greek, was compelled to be circumcised;<br><br>
+     <sup><b>4</b></sup> And this, because of the false brothers, brought in secretly, who stole in to spy out our freedom which we have in Christ Jesus, that they might bring us into slavery.<br><br>
+     <sup><b>5</b></sup> To them we yielded with the subjection demanded not even for an hour, that the truth of the gospel might remain with you.<br><br>
+     <sup><b>6</b></sup> But from those who were reputed to be something — whatever they were makes no difference to me; God does not accept man’s person; for to me those who were of repute added nothing.<br><br>
+     <sup><b>7</b></sup> But on the contrary, seeing that I had been entrusted with the gospel to the uncircumcision, even as Peter with the gospel to the circumcision,<br><br>
+     <sup><b>8</b></sup> (For He who operated in Peter for the apostleship to the circumcision operated also in me for the Gentiles),<br><br>
+     <sup><b>9</b></sup> And perceiving the grace given to me, James and Cephas and John, who were reputed to be pillars, gave to me and to Barnabas the right hand of fellowship that we should go to the Gentiles, and they, to the circumcision.<br><br>
+     <sup><b>10</b></sup> Only they requested that we remember the poor, which very thing I was also eager to do.<br><br>
+     <sup><b>11</b></sup> But when Cephas came to Antioch, I opposed him to his face because he stood condemned.<br><br>
+     <sup><b>12</b></sup> For before some came from James, he continually ate with the Gentiles; but when they came, he began to shrink back and separate himself, fearing those of the circumcision.<br><br>
+     <sup><b>13</b></sup> And the rest of the Jews also joined him in this hypocrisy, so that even Barnabas was carried away in their hypocrisy.<br><br>
+     <sup><b>14</b></sup> But when I saw that they were not walking in a straightforward way in relation to the truth of the gospel, I said to Cephas before them all, If you, being a Jew, live like the Gentiles and not like the Jews, how is it that you compel the Gentiles to live like the Jews?<br><br>
+     <sup><b>15</b></sup> We are Jews by nature and not sinners from among the Gentiles;<br><br>
+     <sup><b>16</b></sup> And knowing that a man is not justified out of works of law, but through faith in Jesus Christ, we also have believed into Christ Jesus that we might be justified out of faith in Christ and not out of the works of law, because out of the works of law no flesh will be justified.<br><br>
+     <sup><b>17</b></sup> But if, while seeking to be justified in Christ, we ourselves also have been found sinners, is then Christ a minister of sin? Absolutely not!<br><br>
+     <sup><b>18</b></sup> For if I build again the things which I have destroyed, I prove myself to be a transgressor.<br><br>
+     <sup><b>19</b></sup> For I through law have died to law that I might live to God.<br><br>
+     <sup><b>20</b></sup> I am crucified with Christ; and it is no longer I who live, but it is Christ who lives in me; and the life which I now live in the flesh I live in faith, the faith of the Son of God, who loved me and gave Himself up for me.<br><br>
+     <sup><b>21</b></sup> I do not nullify the grace of God; for if righteousness is through law, then Christ has died for nothing. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('galatians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Galatians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="galatians-6"><a onclick="open_chapter('top', '48-galatians.html')">Galatians 6</a></h4>
+  <p><sup><b>1</b></sup> Brothers, even if a man is overtaken in some offense, you who are spiritual restore such a one in a spirit of meekness, looking to yourself lest you also be tempted.<br><br>
+     <sup><b>2</b></sup> Bear one another’s burdens, and in this way you will fulfill the law of Christ completely.<br><br>
+     <sup><b>3</b></sup> For if anyone thinks he is something when he is nothing, he deceives himself.<br><br>
+     <sup><b>4</b></sup> But let each man prove his own work, and then he will have his boast in regard to himself alone and not in regard to another.<br><br>
+     <sup><b>5</b></sup> For each one shall bear his own load.<br><br>
+     <sup><b>6</b></sup> But let him who is instructed in the word share in all good things with him who instructs.<br><br>
+     <sup><b>7</b></sup> Do not be deceived: God is not mocked; for whatever a man sows, this he will also reap.<br><br>
+     <sup><b>8</b></sup> For he who sows unto his own flesh will reap corruption of the flesh, but he who sows unto the Spirit will of the Spirit reap eternal life.<br><br>
+     <sup><b>9</b></sup> And let us not lose heart in doing what is good, for in the proper season we will reap if we do not faint.<br><br>
+     <sup><b>10</b></sup> So then, as we have the opportunity, let us do what is good toward all, but especially toward those of the household of the faith.<br><br>
+     <sup><b>11</b></sup> See with what large letters I have written to you with my own hand.<br><br>
+     <sup><b>12</b></sup> As many as desire to make a good show in the flesh, these compel you to be circumcised, but only that they may not be persecuted for the cross of Christ.<br><br>
+     <sup><b>13</b></sup> For neither do they that become circumcised keep the law themselves, but they desire you to be circumcised that they may boast in your flesh.<br><br>
+     <sup><b>14</b></sup> But far be it from me to boast except in the cross of our Lord Jesus Christ, through whom the world has been crucified to me and I to the world.<br><br>
+     <sup><b>15</b></sup> For neither is circumcision anything nor uncircumcision, but a new creation is what matters.<br><br>
+     <sup><b>16</b></sup> And as many as walk by this rule, peace be upon them and mercy, even upon the Israel of God.<br><br>
+     <sup><b>17</b></sup> Henceforth let no one trouble me, for I bear in my body the brands of Jesus.<br><br>
+     <sup><b>18</b></sup> The grace of our Lord Jesus Christ be with your spirit, brothers. Amen. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('galatians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
