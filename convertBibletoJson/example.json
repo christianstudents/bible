@@ -1,0 +1,45 @@
+{
+    "Gen":
+    {
+        "refLong": "Genesis",
+        "ref": "Gen.",
+        "numChapters":50,
+        "chapters": 
+        [
+            {
+                "ref": "Gen. 1",
+                "refLong": "Genesis 1",
+                "numVerses": 50,
+                "verses":[
+                {
+                    "ref": "Gen. 1:1",
+                    "refLong": "Genesis 1:1",
+                    "text": "In the beginning God created the heavens and the earth."    
+                },
+                {
+                    "ref": "Gen. 1:2",
+                    "refLong": "Genesis 1:2",
+                    "text": "And the earth became waste..."    
+                }
+                ]
+            },
+            {
+                "ref": "Gen. 2",
+                "refLong": "Genesis 2",
+                "numVerses": 50,
+                "verses":[
+                {
+                    "ref": "Gen. 2:1",
+                    "refLong": "Genesis 2:1",
+                    "text": "..."    
+                },
+                {
+                    "ref": "Gen .2:2",
+                    "refLong": "Genesis 2:2",
+                    "text": "..."    
+                }
+                ]
+            }
+        ]
+    }
+}
